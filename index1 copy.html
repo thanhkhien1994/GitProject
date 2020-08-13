@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải phương trình bậc 2</title>
+</head>
+<body>
+    <script>
+        let a = parseFloat(prompt("Nhập vào a"));
+        let b = parseFloat(prompt("Nhập vào b"));
+        let c = parseFloat(prompt("Nhập vào c"));
+        let x;
+
+        if(a === 0 && b === 0 && c === 0){
+            alert("phương trình có vô số nghiệm")
+        }else if(a === 0 && b === 0){
+            alert("phương trình vô nghiệm")
+        }else if(a === 0){
+            x = -b/a;
+            alert("Phương trình có một nghiệm duy nhất" + x)
+        }else myfunction(a ,b ,c);
+
+        function myfunction(a, b, c){
+            let denTa = b*b - 4*a*c;
+            let x;
+
+            if (denTa < 0){
+                alert("Phương trình vô nghiệm");
+            } else if (denTa === 0){
+                x = -b/(2*a);
+                alert("Phương trình có nghiệm kép x1 = x2 = " + x);
+
+            }else if(denTa > 0){
+                let x1 = (-b - Math.sqrt(denTa)/2*a);
+                let x2 = (-b + Math.sqrt(denTa)/2*a);
+                alert("phương trình có hai nghiệm x1 = " + x1 + "x2 = " + x2);
+            
+            }
+
+        }
+
+    </script>
+</body>
+</html>
