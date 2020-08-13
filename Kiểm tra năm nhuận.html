@@ -8,12 +8,11 @@
 <script>
     var year = parseInt(prompt("Nhập vào năm"));
 
-
-    if (year%400==0&&year%100==0){
+    if (year%400===0&&year%100===0){
         alert("Năm nhuận");
-    }else if (year%4==0&&year%100!=0){
+    }else if (year%4===0&&year%100!==0){
         alert("Năm nhuận");
-    }else if(year%100==0&&year%400!=0) {
+    }else if(year%100===0&&year%400!==0) {
         alert("Năm không nhuận");
     }else alert("Năm Không nhuận");
 
