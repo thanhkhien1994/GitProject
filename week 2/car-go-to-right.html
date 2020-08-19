@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="docRedy();">
+    <img id="car" src="img/car.png" alt="Car-yellow" style="position: absolute;; left: 0; top: 0;" height="100"; width="150">
+
+    <script>
+        function len(){
+            let car = document.getElementById("car");
+            car.style.top = parseInt(car.style.top) - 5 + "px";
+        }
+        function xuong(){
+            let car = document.getElementById("car");
+            car.style.top = parseInt(car.style.top) + 5 + "px";
+        }
+        function trai(){
+            let car = document.getElementById("car");
+            car.style.left = parseInt(car.style.left) + 5 + "px";
+        }
+        function phai(){
+            let car = document.getElementById("car");
+            car.style.left = parseInt(car.style.left) - 5 + "px";
+        }
+
+
+        function banPhim(evt){
+            switch(evt.keyCode){
+                case 37:
+                    phai();
+                    break;
+                case 39:
+                    trai();
+                    break;
+                case 38:
+                    len();
+                    break;
+                case 40:
+                    xuong();
+                    break;
+
+            }       
+
+        }
+
+        function docRedy(){
+            window.addEventListener("keydown", banPhim);
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        Nhập vào năm:
+        <input type="number" id="inputYear">
+        Nhập vào tháng:
+        <input type="number" id="inputMonth">
+        <button onclick="calculationDays();">Kiểm Tra</button>
+        <p id="displayDays"></p>
+    </fieldset>
+   
+
+    <script>  
+        function calculationDays(){
+            let year = parseInt(document.getElementById("inputYear").value);
+            let month = parseInt(document.getElementById("inputMonth").value);
+            //console.log(month)
+            switch(month){
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    document.getElementById("displayDays").innerHTML = "Năm " + year + " tháng " + month + " có 30 ngày";
+                    break;
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    document.getElementById("displayDays").innerHTML = "Năm " + year + " tháng " + month + " có 31 ngày";
+                    break;
+                case 2:{
+                    if (year%400==0&&year%100==0){
+                        document.getElementById("displayDays").innerHTML = "Năm " + year + " tháng " + month + " có 29 ngày";                                       // alert("Năm nhuận");
+                    }else   if (year%4==0&&year%100!=0){
+                    document.getElementById("displayDays").innerHTML = "Năm " + year + " tháng " + month + " có 29 ngày";
+                                        // alert("Năm nhuận");
+                    }else if(year%100==0&&year%400!=0) {
+                    document.getElementById("displayDays").innerHTML = "Năm " + year + " tháng " + month + " có 28 ngày";
+                                        // alert("Năm không nhuận");
+                    }else document.getElementById("displayDays").innerHTML = "Năm " + year + " tháng " + month + " có 28 ngày";
+                               //alert("Năm Không nhuận");
+                    break;
+                }
+                default:
+                    alert("Vui lòng nhập vào trường nhập !");
+                    document.getElementById("displayDays").innerHTML = "Không có tháng này, Vui lòng nhập lại !"
+            }
+                                              
+        } 
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Cân nặng</p>
+    <input type="number" id="weight">
+    <p>Chiều cao</p>
+    <input type="number" id="height">
+    <button id="click" onclick="calculationIbmWeight();">Let's Go</button>
+    <p id="display"></p>
+    
+    <script>
+        function calculationIbmWeight(){
+            let weight = parseFloat(document.getElementById("weight").value);
+            let height = parseFloat(document.getElementById("height").value);
+            let BMI = weight / (height*height);
+            let display = document.getElementById("display");
+            console.log(BMI,weight,height);
+
+            if (BMI < 18.5){
+                display.innerHTML = "Chỉ số BMI: " + BMI + " = Quá gầy";
+            } else if (BMI >= 18.5 && BMI < 25){
+                display.innerHTML = "Chỉ số BMI: " + BMI + " = Bình thường";
+            } else if (BMI >= 25 && BMI < 30){
+                display.innerHTML = "Chỉ số BMI: " + BMI + " = Hơi mập";
+            }else if (BMI >= 30){
+                display.innerHTML = "Chỉ số BMI: " + BMI + " Mập VL"
+            }
+        }
+    </script>
+
+</body>
+</html>

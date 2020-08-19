@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Good</p>
+    <input type="checkbox" id="good" onclick="check('good');"/>
+    <p>Fast</p>
+    <input type="checkbox" id="fast" onclick="check('fast');"/>
+    <p>Cheap</p>
+    <input type="checkbox" id="cheap" onclick="check('cheap');"/>
+
+    <script>
+        function check(element){
+            let isGood = document.getElementById("good").checked;
+            let isFast = document.getElementById("fast").checked;
+            let isCheap = document.getElementById("cheap").checked;
+            
+            switch (element){
+                case "good":
+                    if(isGood && isCheap){
+                        document.getElementById("fast").checked = false;
+                        console.log("điều kiện đúng");
+                        break;
+                    }
+                case "fast":
+                    if(isGood && isFast){
+                        document.getElementById("cheap").checked = false;
+                        break;
+                    }
+                case "cheap":
+                    if(isFast && isCheap){
+                        document.getElementById("good").checked = false;
+                        break;
+                    }    
+            }
+        }
+
+    </script>
+
+</body>
+</html>

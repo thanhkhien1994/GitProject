@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+   button{
+       width: 30px;
+       height: 30px;
+   }
+</style>
+<body>
+    <table border="1">
+        <tr>
+            <td colspan = "5"><input id="display"/></td>
+        </tr>
+        <tr>
+            <td><button id="1" onclick="myCalculation(this);">1</button></td>
+            <td><button id="2" onclick="myCalculation(this)">2</button></td>
+            <td><button id="3" onclick="myCalculation(this)">3</button></td>
+            <td><button id="+" onclick="myCalculation(this)">+</button></td>  
+            <td rowspan="2"><button style="height: 60px;">&#60;-</button></td>
+        </tr>
+        <tr>
+            <td><button id="4" onclick="myCalculation(this)">4</button></td>
+            <td><button id="5" onclick="myCalculation(this)">5</button></td>
+            <td><button id="6" onclick="myCalculation(this)">6</button></td>
+            <td><button id="-" onclick="myCalculation(this)">-</button></td>  
+        </tr>
+        <tr>
+            <td><button id="7" onclick="myCalculation(this)">7</button></td>
+            <td><button id="8" onclick="myCalculation(this)">8</button></td>
+            <td><button id="9" onclick="myCalculation(this)">9</button></td>
+            <td><button id="*" onclick="myCalculation(this)">*</button></td>  
+            <td rowspan="2"><button id="result" onclick="result(this);" style="height: 60px;">=</button></td>
+        </tr>
+        <tr>
+            <td><button id="." onclick="myCalculation(this)">.</button></td>
+            <td><button id="0" onclick="myCalculation(this)">0</button></td>
+            <td><button id="C" onclick="clearDisplay()">C</button></td>
+            <td><button id="/" onclick="myCalculation(this)">/</button></td>  
+        </tr>
+    </table>
+
+    <script>
+        function myCalculation(button){
+           let display = document.getElementById("display");
+           display.value += button.id;
+           //console.log(display.value);
+        }
+        function result(button){
+           let result = eval(document.getElementById("display").value);
+           document.getElementById("display").value = result;  
+        }
+        function clearDisplay(){
+            document.getElementById("display").value = "";
+        }
+        // xử lí một số thứ khác
+    </script>
+</body>
+</html>

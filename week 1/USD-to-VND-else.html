@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        Nhập vào số tền:
+        <input id="input"/><br>
+        Từ
+        <select id="check1">
+            <option>VND</option>
+            <option>USD</option>
+        </select>
+        Sang
+        <select id="check2">
+            <option>USD</option>
+            <option>VND</option>    
+        </select><br>
+        <button onclick="check();">Chuyển đổi</button>
+        <p id="display"></p>
+    </fieldset>
+
+
+    <script>
+        function check(){
+            let money = document.getElementById('input').value;
+            let country1 = document.getElementById('check1').value;
+            let country2 = document.getElementById('check2').value;
+            let result = convert (money, country1, country2);
+            document.getElementById('display').innerHTML = result;
+        }
+
+        function convert(money, country1, country2){
+            if(country1 == country2){
+                result = money;
+                return result;
+            }
+            if(country1 == 'VND' && country2 == 'USD'){
+                result = money/23000;
+               
+            }
+            if(country1 == 'USD' && country2 == 'VND'){
+                result = money *23000;
+               
+            }
+            return result;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    Nhập money: <input type="text" id="money" />
+    FROM:
+    <select id="country1">
+        <option value="USD">USD</option>
+        <option value="VND">VND</option>
+    </select>
+    TO:
+    <select id="country2">
+        <option value="USD">USD</option>
+        <option value="VND">VND</option>
+    </select>
+    <button type="button" onclick="isInit();">Calc</button>
+    <div id="messageDiv"></div>
+    <script>
+        function isInit() {
+            var money = parseFloat(document.getElementById("money").value);
+            var country1 = document.getElementById("country1").value;
+            var country2 = document.getElementById("country2").value;
+            var result = convert(money, country1, country2);
+            document.getElementById("messageDiv").innerHTML = result;
+        }
+        function convert(money, country1, country2) {
+            var result = money;
+            if (country1 == country2) {
+                return money;
+            }
+            if (country1 == "VND" && country2 == "USD") {
+                result = money / 23000;
+            }
+            if (country1 == "USD" && country2 == "VND") {
+                result = money * 23000;
+            }
+            return result;
+        }
+    </script>
+</body>
+
+</html>

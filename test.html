@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript Example</title>
+    </head>
+    <body>
+        <h2>Lấy giá trị của checkbox bằng Javascript</h2>
+        <p>Hãy viết chương trình khi click vào button thì in ra danh sách sở thích mà người dùng đã chọn.</p>
+         
+        <input type="checkbox" name="hobby" value="Đi chơi"/> <label>Đi chơi</label> <br/>
+        <input type="checkbox" name="hobby" value="Đi du lịch"/> <label>Đi du lịch</label> <br/>
+        <input type="checkbox" name="hobby" value="Đi ăn"/> <label>Đi ăn</label> <br/>
+        <input type="checkbox" name="hobby" value="Đi siêu thị"/> <label>Đi siêu thị</label> <br/>
+        <input type="checkbox" name="hobby" value="học lập trình"/> <label>học lập trình</label> <br/>
+        <input type="checkbox" name="hobby" value="Lướt freetuts.net"/> <label>Lướt freetuts.net</label> 
+            <br/> <br/>
+         
+        <input type="button" id="btn" value="Xem kết quả"/>
+         
+        <script language="javascript">
+            document.getElementById('btn').onclick = function()
+            {
+                // Khai báo tham số
+                var checkbox = document.getElementsByName('hobby');
+                var result = "";
+                 
+                // Lặp qua từng checkbox để lấy giá trị
+                for (var i = 0; i < checkbox.length; i++){
+                    if (checkbox[i].checked === true){
+                        result += ' [' + checkbox[i].value + ']';
+                    }
+                }
+                 
+                // In ra kết quả
+                alert("Sở thích là: " + result);
+            };
+        </script>
+    </body>
+</html>
