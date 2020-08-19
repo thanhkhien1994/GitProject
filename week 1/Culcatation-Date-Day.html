@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TÍnh ngày và năm nhuận</title>
 </head>
 <body>
     <fieldset>
@@ -42,12 +42,12 @@
                         document.getElementById("displayDays").innerHTML = "Năm " + year + " tháng " + month + " có 29 ngày";                                       // alert("Năm nhuận");
                     }else   if (year%4==0&&year%100!=0){
                     document.getElementById("displayDays").innerHTML = "Năm " + year + " tháng " + month + " có 29 ngày";
-                                        // alert("Năm nhuận");
+                                        //("Năm nhuận");
                     }else if(year%100==0&&year%400!=0) {
                     document.getElementById("displayDays").innerHTML = "Năm " + year + " tháng " + month + " có 28 ngày";
-                                        // alert("Năm không nhuận");
+                                        //("Năm không nhuận");
                     }else document.getElementById("displayDays").innerHTML = "Năm " + year + " tháng " + month + " có 28 ngày";
-                               //alert("Năm Không nhuận");
+                               //("Năm Không nhuận");
                     break;
                 }
                 default:
