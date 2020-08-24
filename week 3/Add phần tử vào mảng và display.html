@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="value"/>
+    <input type="button" value="Thêm" onclick="addElement()"/>
+    <input type="button" value="Toàn tác" onclick="_delete()">
+   
+    <div id="display"></div>
+    <script>
+
+        
+        
+        let arr = [];
+        function addElement(){
+            let isElement = document.getElementById('value');
+            arr.unshift(isElement.value);
+            displayElement();
+            //console.log(arr);
+            document.getElementById('value').value = '';
+        }
+        
+        function displayElement(){
+            let element = '<ul>';
+            for(let i = 0; i < arr.length; i++){
+                element += '<li>' + arr[i].toUpperCase() +'</li><br>';
+            }
+            element += '</li>';
+            //console.log(element)
+            document.getElementById('display').innerHTML = element;
+        }
+        function _delete(){
+            arr.shift();
+            displayElement();
+            console.log(arr)
+        }
+        
+        function keyEnter(evt){
+            switch(evt.keyCode){
+                case 13: 
+                addElement();
+                break;
+                case 46:
+                _delete();
+                break;
+            }
+        }
+        
+        window.addEventListener('keydown', keyEnter);
+        
+    </script>
+</body>
+</html>
