@@ -6,23 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" id="addName"/>
-    <input type="button" value="THÊM" onclick="addStudent()"/>
-    <div id="display"></div>
+    <p id="caro"></p>
     <script>
-        let arrStudent = [];
-        function addStudent(){
-            let isStudentName = document.getElementById('addName');
+        let arr = [];
 
-            
-            arrStudent.push(isStudentName.value);
-            console.log(arrStudent)
-            // document.getElementById('addName').value = "";
-            // document.getElementById('display').innerHTML = arrStudent + '<br>'
-            isStudentName.value =Math.floor(Math.random()*100)
-        
+        for (let i=0; i<5; i++) {
+            arr[i] = new Array(0,0,0,0,0) 
         }
-       
     </script>
 </body>
 </html>

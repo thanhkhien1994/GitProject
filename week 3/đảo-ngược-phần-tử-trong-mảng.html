@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = ['Nguyễn', 'Thanh', 'Khiên'];
+        let first = 0; // index tại vị trí 1
+        let last = arr.length - 1; // index tại vị trí cuối
+
+        while (first < last) { // vì khồng biết trước lặp bao nhiêu lần
+            let e = arr[first];
+            arr[first] = arr[last];
+            arr[last] = e;
+            first++;
+            last--;
+        }
+        document.write(arr);
+
+    </script>
+</body>
+
+</html>
