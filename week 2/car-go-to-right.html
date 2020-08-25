@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sự kiện phím</title>
 </head>
+
 <body onload="docRedy();">
-    <img id="car" src="img/car.png" alt="Car-yellow" style="position: absolute;; left: 0; top: 0;" height="100"; width="150">
+    <img id="car" src="img/car.png" alt="Car-yellow" style="position: absolute;; left: 0; top: 0;" height="100" ;
+        width="150">
 
     <script>
-        function len(){
+        function len() {
             let car = document.getElementById("car");
             car.style.top = parseInt(car.style.top) - 5 + "px";
         }
-        function xuong(){
+        function xuong() {
             let car = document.getElementById("car");
             car.style.top = parseInt(car.style.top) + 5 + "px";
         }
-        function trai(){
+        function trai() {
             let car = document.getElementById("car");
             car.style.left = parseInt(car.style.left) + 5 + "px";
         }
-        function phai(){
+        function phai() {
             let car = document.getElementById("car");
             car.style.left = parseInt(car.style.left) - 5 + "px";
         }
 
 
-        function banPhim(evt){
-            switch(evt.keyCode){
+        function banPhim(evt) {
+            switch (evt.keyCode) {
                 case 37:
                     phai();
                     break;
@@ -42,14 +45,15 @@
                     xuong();
                     break;
 
-            }       
+            }
 
         }
 
-        function docRedy(){
+        function docRedy() {
             window.addEventListener("keydown", banPhim);
         }
 
     </script>
 </body>
+
 </html>

@@ -7,30 +7,6 @@
   <title>Practice Array</title>
 </head>
 
-<body>
-  
-    <h1>Thực hành Array</h1>
-    <input type="text" id="number" value="8">
-    <input type="submit" value="Add" onclick="addElement()">
-     
-    <div id="output"></div>
-  <script>
-    let arr = [];
-    function addElement() {
-      let number = document.getElementById("number");
-      arr.push(number.value);
-      number.value = Math.floor(Math.random() * 100);
-      displayElement();
-    }
-    function displayElement() {
-      let list = "<ul>";
-      for (let i = 0; i < arr.length; i++) {
-        list += "<li>Element tại index " + i + " = " + arr[i] + "</li>";
-      }
-      list += "</ul>";
-      document.getElementById("output").innerHTML = list;
-    }
-  </script> 
 </body>
 
 </html>

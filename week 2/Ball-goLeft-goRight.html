@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Di chuyển ảnh với thuộc tính style</title>
 </head>
+
 <body>
-    <img src="img/1.png" alt="ball" id="myImage"/>
-    <button  onclick="ball();">Click Me</button>
+    <img src="img/1.png" alt="ball" id="myImage" />
+    <button onclick="ball();">Click Me</button>
 
     <script>
         let a = document.getElementById("myImage");
-        a.style.position = "relative"
-        a.style.left = "0px"
-        function ball(){ 
-             
-          a.style.lefth = parseInt(a.style.left) + 10 + "px";
+        a.style.position = "relative";
+        a.style.left = "0px";
+        function ball() {
+
+            a.style.left = parseInt(a.style.left) + 10 + "px";
         }
     </script>
 </body>
+
 </html>

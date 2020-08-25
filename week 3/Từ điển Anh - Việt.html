@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset style="height: 50px;">
+        <input type="button" value="Thêm từ tự định nghĩa" onclick="addTranslate();" />
+        <input type="text" id="addValueLanguage" value="English" />
+        <input type="button" onclick="Translate()" value="Dịch">
+        <div id="displayValue"></div>
+    </fieldset>
+    <fieldset style="height: 500px;">
+        <legend>Danh sánh từ vựng</legend>
+        <div id="displayTranslate"></div>
+    </fieldset>
+
+    <script>
+        let languageVN = ['CON CHÓ', 'CON MÈO', 'CON HEO', 'TIẾNG ANH'];
+        let languageEN = ['DOG', 'CAT', 'PIG', 'ELGLISH'];
+
+        function addTranslate() { // hàm thêm dữ liệu cơ sở
+            let inputEN = (prompt('Nhập vào từ vựng English')).toUpperCase();
+            let inputVN = (prompt('Nghĩa của từ bạn vừa nhập')).toUpperCase();
+
+            languageEN.unshift(inputEN);
+            languageVN.unshift(inputVN);
+            console.log(languageEN, languageVN);
+
+            confirm("xác nhận", displayTranslate());
+        }
+        displayTranslate();
+        function displayTranslate() {// hàm hiển thị từ vựng
+            let index = '<ul>';
+            for (let i = 0; i < languageVN.length; i++) {
+                index += '<li>' + languageEN[i] + " : " + languageVN[i] + '</li>';
+            }
+            index += "</ul>";
+            document.getElementById("displayTranslate").innerHTML = index;
+        }
+
+        // function Translate(){ //hàm thực hiện chức năng dịch
+        //     let text = document.getElementById("addValueLanguage").value;
+        //     text = text.toUpperCase();
+        //     let index = -1;
+        //     let language = '';
+
+        //     for(i=0; i<languageVN.length;i++){
+        //         if(languageVN[i] == text){
+        //             index = i;
+        //             language = languageVN[index];
+        //             break;
+        //         }else if(languageEN[i] == text){
+        //             index = i;
+        //             language = languageEN[index];
+        //             break;
+        //         }
+        //     }
+        //     console.log(language);
+        //     console.log(index);
+        //     console.log(languageEN[index])
+
+        //     if(index == -1){
+        //         alert('Không tìm thấy');
+        //     }else if(language == languageVN[index]){
+        //         document.getElementById("displayValue").innerHTML = text +' : '+ languageEN[index];
+        //     }else if(language == languageEN[index]){
+        //         document.getElementById("displayValue").innerHTML = text +' : '+ languageVN[index];
+        //     }
+
+        //     document.getElementById("addValueLanguage").value ="";
+
+        // }
+
+        function Translate() {// hàm thực hiện chức năng dịch
+            let text = document.getElementById('addValueLanguage').value;
+            let index = -1;
+            for (let i = 0; i < languageVN.length; i++) {
+                if (text == languageVN[i]) {
+                    index = i;
+                    break;
+                }
+            }
+            return index;
+        }
+        alert(languageEN[Translate(languageVN)])
+
+        function eventEnter(evt) { // hàm sự kiện enter
+            switch (evt.keyCode) {
+                case 13:
+                    Translate();
+            }
+        }
+        window.addEventListener("keydown", eventEnter);     
+    </script>
+</body>
+
+</html>

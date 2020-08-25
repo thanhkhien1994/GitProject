@@ -8,32 +8,27 @@
 <body>
     <input type="text" id="value"/>
     <input type="button" value="Thêm" onclick="addElement()"/>
-    <input type="button" value="Toàn tác" onclick="_delete()">
+    <input type="button" value="Toàn tác" onclick="deleteElement()">
    
     <div id="display"></div>
     <script>
-
-        
-        
         let arr = [];
-        function addElement(){
+        function addElement() {
             let isElement = document.getElementById('value');
             arr.unshift(isElement.value);
             displayElement();
-            //console.log(arr);
-            document.getElementById('value').value = '';
+            isElement.value = '';
         }
         
-        function displayElement(){
+        function displayElement() {
             let element = '<ul>';
-            for(let i = 0; i < arr.length; i++){
+            for (let i = 0; i < arr.length; i++){
                 element += '<li>' + arr[i].toUpperCase() +'</li><br>';
             }
             element += '</li>';
-            //console.log(element)
             document.getElementById('display').innerHTML = element;
         }
-        function _delete(){
+        function deleteElement() {
             arr.shift();
             displayElement();
             console.log(arr)
@@ -45,7 +40,7 @@
                 addElement();
                 break;
                 case 46:
-                _delete();
+                deleteElement();
                 break;
             }
         }
