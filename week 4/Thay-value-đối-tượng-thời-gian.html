@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Date(year, month, day) {
+            this.year = year;
+            this.month = month;
+            this.day = day;
+
+            this.setDay = function (ngay) {
+                this.day = ngay;
+            }
+            this.setMonth = function (thang) {
+                this.month = thang;
+            }
+            this.setYear = function (nam) {
+                this.year = nam;
+            }
+        }
+
+        let myDate = new Date();
+        myDate.setDay(11);
+        myDate.setMonth(09);
+        myDate.setYear(1994);
+
+        console.log(myDate.year)
+    </script>
+</body>
+
+</html>

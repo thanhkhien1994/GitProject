@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 
     <div class="">
         <fieldset>
             <legend>Thêm sản phẩm</legend>
             <p>Thêm các sản phẩm thuộc danh mục điện thoại.<br>Nhấn Enter để thêm<br>Nhấn Delete để quay lại</p>
-            <input id="addProduct"/>
-            <input type="button" value="Add" onclick="addProduct();"/>
-            <input type="button" value="Undo" onclick="undo();"/>
+            <input id="addProduct" />
+            <input type="button" value="Add" onclick="addProduct();" />
+            <input type="button" value="Undo" onclick="undo();" />
         </fieldset>
     </div>
 
@@ -25,36 +27,38 @@
     </div>
 
     <script>
-        let arrProductList = ["Iphone 4","Iphone 5","Samsung Galaxy Note 9"];
-        
-        function addProduct(){// Hàm thêm sản phẩm
+        let arrProductList = [];
+
+        function addProduct() {// Hàm thêm sản phẩm
             let inputProduct = document.getElementById('addProduct').value;
             if (inputProduct != "") {
                 arrProductList.unshift(inputProduct);
             }
-            document.getElementById('addProduct').value = "";            
+            document.getElementById('addProduct').value = "";
             console.log(arrProductList)
             displayProductList();
         }
 
         displayProductList();
-        function displayProductList(){ // Hàm hiển thị sản phẩm
+
+        function displayProductList() { // Hàm hiển thị sản phẩm
             let elementProduct = "<table>";
-            for (let i=0; i<arrProductList.length; i++){
-                elementProduct +=   (`
+            for (let i = 0; i < arrProductList.length; i++) {
+                elementProduct += (`
                      <tr>
-                        <td><input id="${i}" value="${arrProductList[i]}"/></td>
-                        <td><input type = 'button' value="Edit" onclick="editProduct();"/> </td>
-                        <td><input type = 'button' value="Delete" onclick="deleteProduct();"/> </td>
-                        </tr>
+                        <th><input value="${arrProductList[i]}"/></td>
+                        <th><input type = 'button' value="Edit" onclick="editProduct(${i});"/></th>
+                        <th><input type = 'button' value="Delete" onclick="deleteProduct(${i});"/></th>
+                    </tr>
                                     `);
             }
-            elementProduct+= "</table>"
+            elementProduct += "</table>"
             document.getElementById('displayProductList').innerHTML = (elementProduct);
         }
 
-        window.addEventListener('keydown',enterAddProduct);
-        function enterAddProduct(evt){// Hàm sử lí nút enter
+        window.addEventListener('keydown', enterAddProduct);
+
+        function enterAddProduct(evt) {// Hàm sử lí nút enter
             switch (evt.keyCode) {
                 case 13:
                     addProduct();
@@ -65,29 +69,26 @@
             }
         }
 
-        function editProduct(){ // Hàm sửa sản phẩm
-            
-            for (let j=0; j<arrProductList.length; j++) {
-                let a = document.getElementById(j).value;
-                if(arrProductList[j] !== a ){
-                
-                    displayProductList();
-                    console.log(arrProductList[0])
-                    break;
-                }
+        function editProduct(index) { // Hàm sửa sản phẩm
+            let valueOll = arrProductList[index];
+            document.getElementById('')
+
+        }
+
+        function deleteProduct(index) { // Hàm xóa sản phẩm
+            if (confirm("Are you sure?")) {
+                arrProductList.splice(index, 1);
+                displayProductList();
             }
         }
 
-        function deleteProduct(){ // Hàm xóa sản phẩm
-        
-        }
-
-        function undo(){// Hàm hoàn tác khi lỡ thêm SP
+        function undo() {// Hàm hoàn tác khi lỡ thêm SP
             arrProductList.shift();
             displayProductList();
         }
     </script>
-  
+
 
 </body>
+
 </html>

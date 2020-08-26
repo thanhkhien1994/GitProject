@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" style="border: 1px solid #000000;" width="1368" height="768"></canvas>
+
+    <script>
+        function Criele(x,y,radius){//lớp hình tròn 
+            this.x = x;
+            this.y = y;
+            this.radius = radius;
+        }
+
+        function createCircles(){ //hàm vẽ hình tròn
+            let cxt = document.getElementById("myCanvas").getContext("2d");
+            var cirele = new Criele(200,200,200);
+            cxt.beginPath();
+            cxt.arc(cirele.x, cirele.y, cirele.radius, 0, 2*Math.PI);
+            cxt.stroke();
+        }
+        createCircles();
+
+    </script>
+</body>
+</html>

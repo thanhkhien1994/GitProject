@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        
+       let myDate = new Date(11,09,1994);
+
+       function Date(day,month,year){
+           this.day = day;
+           this.month = month;
+           this.year = year;
+
+           this.getMonth = function(){
+               return this.month;
+           }
+
+           this.getDay = function(){
+               return this.day;
+           }
+
+           this.getYear = function(){
+               return this.year;
+           }
+       }
+
+       let ngay = myDate.getDay();
+       let thang = myDate.getMonth();
+       let nam = myDate.getYear();
+       console.log(ngay,thang,nam);
+    </script>
+
+</body>
+
+</html>

@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="823c3efa-282d-4392-a455-8d59d3375c8c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Giải Phương Trình Bậc 2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kiểm tra a chia hết cho b.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kiểm tra năm nhuận.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kiểm tra số âm số dương.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nhập vào số từ 1 -7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/test1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test/test1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week 3/quan-ly-san-pham-su-dung-ham.html" beforeDir="false" afterPath="$PROJECT_DIR$/week 3/quan-ly-san-pham-su-dung-ham.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +23,14 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -40,6 +45,8 @@
       <workItem from="1597368673728" duration="167000" />
       <workItem from="1597380021196" duration="72000" />
       <workItem from="1597543428683" duration="20000" />
+      <workItem from="1598339188089" duration="3649000" />
+      <workItem from="1598365504873" duration="368000" />
     </task>
     <servers />
   </component>
@@ -51,9 +58,13 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="462" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1597380087677" />
-    <state x="184" y="14" key="SettingsEditor" timestamp="1597368401331">
+    <state x="263" y="103" key="IDE.errors.dialog" timestamp="1598339496785">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="184" y="14" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1597368401331" />
+    <state x="263" y="103" key="IDE.errors.dialog/0.0.1366.738@0.0.1366.738" timestamp="1598339496785" />
+    <state x="200" y="22" key="SettingsEditor" timestamp="1598365691550">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="200" y="22" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1598365691550" />
   </component>
 </project>

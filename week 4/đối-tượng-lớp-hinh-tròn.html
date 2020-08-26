@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let value = prompt("Nhập vào bán kính đường tròn");
+        let hinhTron = new Circle(value);
+
+        function Circle(radius){
+            this.radius = radius;
+
+            this.getRadius = function(){
+                return radius;
+            }
+
+            this.evalArea = function(){
+                return Math.PI * radius * radius;
+            }
+        }
+        
+        let radius = hinhTron.getRadius();
+        let Area = hinhTron.evalArea();
+        alert("bán kính đường tròn là : " + radius + " diện tích hình tròn là: " + Area);
+    </script>
+</body>
+</html>
