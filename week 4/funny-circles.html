@@ -1,29 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <canvas id="myCanvas" style="border: 1px solid #000000;" width="1368" height="768"></canvas>
+<canvas id="myCanvas" style="border: 1px solid #000000;" width="1368" height="768"></canvas>
 
-    <script>
-        function Criele(x,y,radius){//lớp hình tròn 
-            this.x = x;
-            this.y = y;
-            this.radius = radius;
-        }
+<script>
+    function Circle(x, y, radius) {
+        this.x = x;
+        this.y = y;
+        this.radius = radius;
 
-        function createCircles(){ //hàm vẽ hình tròn
-            let cxt = document.getElementById("myCanvas").getContext("2d");
-            var cirele = new Criele(200,200,200);
-            cxt.beginPath();
-            cxt.arc(cirele.x, cirele.y, cirele.radius, 0, 2*Math.PI);
-            cxt.stroke();
-        }
-        createCircles();
+    }
 
-    </script>
+    creatCircle();
+
+    function creatCircle() {
+        let cxt = document.getElementById("myCanvas").getContext("2d");
+        let color = randomColor();
+
+        let x = Math.random() * 1368;
+        let y = Math.random() * 768;
+        let radius = Math.floor(Math.random() * 150);
+        let circle = new Circle(x, y, radius);
+
+        cxt.beginPath();
+        cxt.arc(circle.x, circle.y, circle.radius, 0, 2 * Math.PI);
+        cxt.fillStyle = color;  //"rgb(" + 12 + "," + 54 + "," + 36 +")" màu RGB
+        cxt.fill();
+    }
+
+    function randomColor() {
+        let red = Math.random() * 255;
+        let green = Math.random() * 255;
+        let blue = Math.random() * 255;
+        return "rgb(" + red + "," + green + "," + blue + ")";
+    }
+
+    setInterval(creatCircle, 100)
+
+
+</script>
 </body>
+
 </html>
