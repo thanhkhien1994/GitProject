@@ -11,39 +11,42 @@
 <canvas id="myCanvas" style="border: 1px solid #000000;" width="1368" height="768"></canvas>
 
 <script>
-    function Circle(x, y, radius) {
+    function Circle(x, y, radius) {// lớp hình tròn gồm các thuộc tính sau
         this.x = x;
         this.y = y;
         this.radius = radius;
 
     }
 
-    creatCircle();
-
-    function creatCircle() {
+    function creatCircle() {//tạo hình tròn bằng canvas
         let cxt = document.getElementById("myCanvas").getContext("2d");
         let color = randomColor();
-
+        // khởi tạo tọa độ tâm hình tròn ngẫu nhiên
         let x = Math.random() * 1368;
         let y = Math.random() * 768;
-        let radius = Math.floor(Math.random() * 150);
+        let radius = Math.floor(Math.random() * 85);
         let circle = new Circle(x, y, radius);
-
-        cxt.beginPath();
+        // tạo ra 1 hình tròn bằng canvas
+        cxt.beginPath(); //bắt dầu vẽ
         cxt.arc(circle.x, circle.y, circle.radius, 0, 2 * Math.PI);
         cxt.fillStyle = color;  //"rgb(" + 12 + "," + 54 + "," + 36 +")" màu RGB
-        cxt.fill();
+        cxt.fill();// tô bên trong hình tròn
     }
 
-    function randomColor() {
+    function randomColor() {// tạo màu ngẫu nhiên RGB trả về value
         let red = Math.random() * 255;
         let green = Math.random() * 255;
         let blue = Math.random() * 255;
-        return "rgb(" + red + "," + green + "," + blue + ")";
+        return "rgb(" +red+ ","+green+","+blue+")";
     }
 
-    setInterval(creatCircle, 100)
+    function createCircles() {// dùng vòng for để tạo ra nhiều đối tượng hình tròn
+        for (let i = 0; i <= 10; i++) {
+            creatCircle();
+        }
+    }
 
+    createCircles(); // gọi hàm này khi khởi chạy lần đầu tiên
 
 </script>
 </body>

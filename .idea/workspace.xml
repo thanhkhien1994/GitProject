@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="823c3efa-282d-4392-a455-8d59d3375c8c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week 3/quan-ly-san-pham-su-dung-ham.html" beforeDir="false" afterPath="$PROJECT_DIR$/week 3/quan-ly-san-pham-su-dung-ham.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week 4/Test funny cireles.html" beforeDir="false" afterPath="$PROJECT_DIR$/week 4/Test funny cireles.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/week 4/funny-circles.html" beforeDir="false" afterPath="$PROJECT_DIR$/week 4/funny-circles.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +40,10 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="ToolWindowEvent Log.ShowToolbar" value="false" />
+    <property name="ToolWindowGit.ShowToolbar" value="false" />
+    <property name="ToolWindowGraphQL.ShowToolbar" value="false" />
+    <property name="ToolWindowProblems.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -50,12 +72,23 @@
       <workItem from="1598365504873" duration="368000" />
       <workItem from="1598438609891" duration="2140000" />
       <workItem from="1598515446396" duration="562000" />
-      <workItem from="1598517812705" duration="5381000" />
+      <workItem from="1598517812705" duration="9786000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="195" y="7" key="#Plugins" timestamp="1598515843985">
@@ -66,18 +99,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="362" y="98" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1598441452768" />
-    <state x="462" y="123" key="FileChooserDialogImpl" timestamp="1597380087677">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="462" y="128" key="FileChooserDialogImpl" timestamp="1598532087162">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="462" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1597380087677" />
-    <state x="263" y="103" key="IDE.errors.dialog" timestamp="1598339496785">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="263" y="103" key="IDE.errors.dialog/0.0.1366.738@0.0.1366.738" timestamp="1598339496785" />
-    <state x="200" y="17" key="SettingsEditor" timestamp="1598517876165">
+    <state x="462" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1598530762480" />
+    <state x="462" y="128" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1598532087162" />
+    <state x="263" y="77" key="IDE.errors.dialog" timestamp="1598530312365">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="200" y="17" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1598517876165" />
-    <state x="200" y="22" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1598365691550" />
+    <state x="263" y="77" key="IDE.errors.dialog/0.0.1366.728@0.0.1366.728" timestamp="1598530312365" />
+    <state x="263" y="103" key="IDE.errors.dialog/0.0.1366.738@0.0.1366.738" timestamp="1598339496785" />
+    <state x="368" y="29" key="SettingsEditor" timestamp="1598532091795">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="149" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1598530126376" />
+    <state x="117" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1598531389432" />
+    <state x="368" y="29" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1598532091795" />
+    <state x="199" y="82" width="565" height="285" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1598532089040">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="199" y="79" width="584" height="285" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1366.738@0.0.1366.738" timestamp="1598531388180" />
+    <state x="199" y="82" width="565" height="285" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1366.768@0.0.1366.768" timestamp="1598532089040" />
   </component>
 </project>
