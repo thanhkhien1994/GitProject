@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập chiều dài
+<input type="number" id="width" placeholder="Nhập vào chiều rộng">
+Nhập chiều rộng
+<input id="height" type="number" placeholder="Nhập vào chiều dài">
+<button onclick="drawRecTangle();">Nhập</button>
+<p id="display"></p>
+<canvas id="myCanvas" width="500" height="500" style="border: 1px solid #000000 ; margin-left: 100px"></canvas>
+
+<script>
+    function Rectangle(a, b) { // lớp hình vuông
+        this.a = a;
+        this.b = b;
+
+        this.S = function () {
+            return this.a * this.b;
+        }
+        this.P = function () {
+            return (this.a + this.b) * 2;
+        }
+    }
+
+    function drawRecTangle() { //vẽ hình vuông
+        let cxt = document.getElementById("myCanvas").getContext("2d");
+        cxt.clearRect(0,0,500,500);
+        //DOM
+        let a = document.getElementById("height").value;
+        let b = document.getElementById("width").value;
+        //đối tượng
+        let rectangle = new Rectangle(a,b);
+        //vẽ
+        cxt.beginPath();
+        cxt.fillStyle = randomColor();
+        cxt.fillRect(0, 0, rectangle.a, rectangle.b);
+
+        document.getElementById("display").innerHTML = "Diện tích: " + rectangle.S() +"m2, "+ "Chu vi là: " +rectangle.P() +" m";
+        // xóa value input
+        document.getElementById("height").value = "";
+        document.getElementById("width").value = "";
+    }
+
+    function randomColor() { //RGB ngâu nhiên
+        let red = Math.floor(Math.random() * 255);
+        let green = Math.floor(Math.random() * 255);
+        let blue = Math.floor(Math.random() * 255);
+        return "rgb(" + red + "," + blue + "," + green +")";
+    }
+    function keyEnter (evt) {
+        switch (evt.keyCode){
+            case 13:
+                drawRecTangle();
+                break;
+        }
+    }
+    window.addEventListener("keydown",keyEnter);
+
+</script>
+
+</body>
+</html>
