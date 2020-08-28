@@ -20,9 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="823c3efa-282d-4392-a455-8d59d3375c8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/week 4/Rectangle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/test-phone-OOP.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week 4/Lớp điện thoại/smartPhone.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week 4/Lớp điện thoại/smartPhone.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week 4/Test funny cireles.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Test funny cireles.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +33,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -71,6 +73,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DELL\Desktop\Dự án\GitProject\week 4\Lớp điện thoại" />
       <recent name="C:\Users\DELL\Desktop\Dự án\GitProject\Test" />
     </key>
   </component>
@@ -93,7 +96,8 @@
       <workItem from="1598517812705" duration="10110000" />
       <workItem from="1598539721367" duration="807000" />
       <workItem from="1598543455310" duration="1073000" />
-      <workItem from="1598575688044" duration="6430000" />
+      <workItem from="1598575688044" duration="6790000" />
+      <workItem from="1598583380120" duration="3740000" />
     </task>
     <servers />
   </component>
