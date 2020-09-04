@@ -1,5 +1,4 @@
 let question = [// Mảng câu hỏi
-    "CodeGym có bao nhiêu cơ sở đào tạo tính đến năm 2020 ?",
     "Ngày sinh của cố chủ tịch Hồ Chí Minh là ngày nào ?",
     "Ba thương con vì con giống mẹ, mẹ thương con vì con giống ... ?",
     "Đâu là một loại hình chợ tạm tự phát thường xuất hiện trong các khu dân cư?",
@@ -11,7 +10,6 @@ let question = [// Mảng câu hỏi
     "Đâu là tên một loại bánh Huế?"
 ]
 let answers = [// Mảng các đáp án
-    ["A: 11 Cơ sở", "B: 5 Cơ sở", "C: 4 Cơ sở", "D: 1 Cơ sở"],
     ["A: 11/09/1911", "B: 25/10/1898", "C: 19/05/1890", "D: Không rõ"],
     ["A: Ông hàng xóm", "B: Ông bạn thân", "C: Ba", "D: Bố"],
     ["A: Ếch", "B: Cóc", "C: Thằn lằn", "D: Nhái"],
@@ -21,11 +19,8 @@ let answers = [// Mảng các đáp án
     ["A: Hàn Quốc", "B: Mông Cổ", "C: Nhật Bản", "D: Triều Tiên"],
     ["A: Kon Tum", "B: Đắk Lắk", "C: Gia Lai", "D: Đắk Nông"],
     ["A: Khoái", "B: Sướng", "C: Thích", "D: Vui"],
-
-
 ]
 let answer = [ // Mảng đáp án đúng
-    "C: 4 Cơ sở",
     "C: 19/05/1890",
     "C: Ba",
     "B: Cóc",
