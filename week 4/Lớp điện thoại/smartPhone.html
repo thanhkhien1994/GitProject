@@ -8,15 +8,32 @@
 <style>
     .nokia{
         margin-left: 300px;
-        margin-top: -500px;
+        margin-top: -518px;
     }
+    #myIphone{ 
+        width: 250px;
+        height: 500px;
+    }
+    #myNokia{ 
+        width: 250px;
+        height: 500px;
+    }
+
+       
 </style>
 <body>
 <div class="iphone">
     <table border="1px" style="border-collapse: collapse" width="250" height="500">
         <tr>
             <th>
-                <p>My iphone</p>
+                <div id="myIphone">
+                    <p id="nameIphone"></p><br/>
+                    <p id="statusIphone"></p><br/>
+                    <p id="pinIphone"></p><br/>
+                    <input id="messIphone"/><button onclick="sentMessIphone();">Gửi tin nhắn</button><br/>
+                    <button onclick="showMessIphone();">Hộp thư đến</button><br/>
+                    <p id="showMessIphone"></p>
+                </div>
             </th>
         </tr>
     </table>
@@ -25,7 +42,15 @@
     <table border="1px" style="border-collapse: collapse" width="250" height="500">
         <tr>
             <th>
-                <p>Nokia of Crush</p>
+                <div id="myNokia">
+                    <p>Nokia</p><br/>
+                    <p id="statusNokia"></p><br/>
+                    <p id="pinNokia"></p><br/>
+                    <input id="messNokia"/><button onclick="sentMessNokia();">Gửi tin nhắn</button><br/>
+                    <button onclick="showMessNokia();">Hộp thư đến</button><br/>
+                    <p id="showMessNokia"></p>
+                </div>
+                
 
             </th>
         </tr>

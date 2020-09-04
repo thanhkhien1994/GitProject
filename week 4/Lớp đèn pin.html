@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   
+    <button onclick="status();"><p id="status">Tắt đèn</p></button>
+    <table>
+        <tr>
+            <td><p id="statusPin"></p></td>
+        </tr>
+    </table>
+
+    <script>
+        let battery = new Battery();
+        function Battery() { // Lớp pin
+            this.setNangLuong = function (nangLuong) {//đặt giá trị năng lượng
+                this.nangLuong = nangLuong;
+            }
+            this.getNangLuong = function () {// lấy giá trị năng lượng
+                return this.nangLuong;
+            }
+            this.tutPin = function () {// giảm năng lượng
+                if (this.nangLuong > 0) {
+                    this.nangLuong--;
+                }else if(this.nangLuong == 0){
+                    document.getElementById("statusPin").innerHTML = "Tắt nguồn"
+                }
+                return this.nangLuong;
+            }
+        }
+
+        let flastPin = new FlastPin();
+        function FlastPin() {// lớp đèn
+            // this.setBattery = function (battery) { //đặt giá trị pin
+            //     this.battery = battery;
+            // }
+            // this.getBatteryInfo = function () {// thông tin pin
+            //     return this.battery.getNangLuong();
+            // }
+            this.light = function () { //trạng thái đèn
+                if (this.status) {
+                    document.getElementById("status").innerHTML = "Bật đèn";
+                } else document.getElementById("status").innerHTML = "Tắt đèn";
+            }
+            this.turnOn = function () {// bật
+                this.status = true;
+            }
+            this.turnOff = function () {// tắt
+                this.status = false;
+            }
+        }
+    
+        let pop = 0;
+        battery.setNangLuong(10);
+        function status(){
+            if(pop == 0){
+                flastPin.turnOn();
+                flastPin.light();
+                document.getElementById("statusPin").innerHTML = "Trạng thái pin " + battery.tutPin() +"%";
+                pop = 1;
+                battery.tutPin();
+            } else {
+                flastPin.turnOff();
+                flastPin.light();
+                pop = 0;
+            }
+  
+        }
+        
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <canvas id = "canvas" width="400px" height = "400px"  style="border: 1px solid"></canvas>
+
+    <script>
+        /***************** Circle ***************/
+
+        function Circle() {
+            this.radius = Math.floor(Math.random() * 30) + 30;
+
+            this.cx = Math.floor(Math.random() * 400);
+            this.cy = Math.floor(Math.random() * 400);
+            this.left = this.cx - this.radius;
+            this.top = this.cy - this.radius;
+            this.right = this.cx + this.radius;
+            this.bottom = this.cy + this.radius;
+
+            this.color = "green";
+
+            this.typeName = "Circle";
+        }
+        Circle.prototype.resetColor = function() {
+            this.color = "green";
+        }
+        Circle.prototype.draw = function(context) {
+            context.beginPath();
+            context.fillStyle = this.color;
+            context.arc(this.cx, this.cy, this.radius, 0, Math.PI * 2, true);
+            context.closePath();
+            context.fill();
+        }
+        Circle.prototype.setPosition = function(x, y) {
+            this.cx = x + this.radius;
+            this.cy = y + this.radius;
+
+            this.left = x;
+            this.top = y;
+            this.right = this.cx + this.radius;
+            this.bottom = this.cy + this.radius;
+        }
+        Circle.prototype.contains = function(x, y) {
+            var dx = this.cx - x;
+            var dy = this.cy - y;
+
+            return Math.sqrt(dx * dx + dy * dy) <= this.radius;
+        }
+        Circle.prototype.collide = function(shape) {
+            var type = shape.typeName;
+
+            switch (type) {
+                case "Circle":
+                    this.collideWithCircle(shape);
+                    break;
+                case "Rect":
+                    this.collideWithRect(shape)
+                    break;
+                default:
+                    break;
+            }
+        }
+        Circle.prototype.collideWithCircle = function(circle) {
+            var dx = this.cx - circle.cx;
+            var dy = this.cy - circle.cy;
+
+            var isCollided = Math.sqrt(dx * dx + dy * dy) <= this.radius + circle.radius;
+
+            if (isCollided) this.color = "red";
+        }
+        Circle.prototype.collideWithRect = function(rect) { // xét va chạm 2 hình tròn
+            var px = this.cx;
+            var py = this.cy;
+
+            if (px < rect.left) px = rect.left;
+            else if (px > rect.right) px = rect.right;
+
+            if (py < rect.top) py = rect.top;
+            else if (py > rect.bottom) py = rect.bottom;
+
+            var dx = this.cx - px;
+            var dy = this.cy - py;
+
+            var isCollided = (dx * dx + dy * dy) <= this.radius * this.radius;
+
+            if (isCollided) this.color = "red";
+        } /*************** rect.js *******************/
+
+        function Rect(left, top, width, height) {
+            this.width = width ? width : 100;
+            this.height = height ? height : 100;
+
+            this.left = left ? left : 100;
+            this.top = top ? top : 100;
+            this.right = this.left + this.width;
+            this.bottom = this.top + this.height;
+
+            this.color = "blue";
+
+            this.typeName = "Rect";
+        }
+        Rect.prototype.resetColor = function() {
+            this.color = "blue";
+        }
+        Rect.prototype.contains = function(x, y) {
+            return x > this.left && x < this.right && y > this.top && y < this.bottom;
+        }
+
+        Rect.prototype.setPosition = function(x, y) {
+            this.left = x;
+            this.top = y;
+
+            this.right = this.left + this.width;
+            this.bottom = this.top + this.height;
+        }
+        Rect.prototype.draw = function(context) {
+            context.fillStyle = this.color;
+            context.fillRect(this.left, this.top, this.width, this.height);
+        } /************** Main *************/
+
+        var _canvas;
+        var _context;
+        var _movingShape = false;
+        var _circle1;
+        var _circle2;
+        var _rect;
+        var _offsetX;
+        var _offsetY;
+
+        function canvas_mousedown(e) {
+
+            var x = e.pageX - _canvas.offsetLeft;
+            var y = e.pageY - _canvas.offsetTop;
+            if (_rect.contains(x, y)) {
+                _offsetX = x - _rect.left;
+                _offsetY = y - _rect.top;
+                _movingShape = _rect;
+            } else if (_circle1.contains(x, y)) {
+                _offsetX = x - _circle1.left;
+                _offsetY = y - _circle1.top;
+                _movingShape = _circle1;
+            } else if (_circle2.contains(x, y)) {
+                _offsetX = x - _circle2.left;
+                _offsetY = y - _circle2.top;
+                _movingShape = _circle2;
+            } else _movingShape = null;
+        }
+
+        function canvas_mousemove(e) {
+            if (_movingShape) {
+                var x = e.pageX - _canvas.offsetLeft - _offsetX;
+                var y = e.pageY - _canvas.offsetTop - _offsetY;
+
+                _movingShape.setPosition(x, y);
+                update();
+                draw();
+
+            }
+        }
+
+        function canvas_mouseup(e) {
+            _movingShape = null;
+        }
+
+        function clear() {
+            _context.clearRect(0, 0, _canvas.width, _canvas.height);
+        }
+
+        function draw() {
+            clear();
+            _rect.draw(_context);
+            _circle1.draw(_context);
+            _circle2.draw(_context);
+
+        }
+
+        function update() {
+            _circle1.resetColor();
+            _circle2.resetColor();
+
+            _circle1.collide(_rect);
+            _circle1.collide(_circle2);
+            _circle2.collide(_rect);
+            _circle2.collide(_circle1);
+            draw();
+        }
+
+        // onload
+        _canvas = document.getElementById("canvas");
+        _context = _canvas.getContext("2d");
+
+        _circle1 = new Circle(_canvas.width, _canvas.height);
+        _circle2 = new Circle(_canvas.width, _canvas.height);
+        _rect = new Rect(100, 100, 200, 100);
+        _canvas.onmousedown = canvas_mousedown;
+        _canvas.onmousemove = canvas_mousemove;
+        _canvas.onmouseup = canvas_mouseup;
+
+        update();
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Câu lệnh switch-case</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend><h3>Tính số ngày trong tháng</h3></legend>
+
+            <input id="nam" type="number" value="2020">
+            <input id="thang" type="number" value="1">
+
+            <button type="button" onclick="data()">Tính số ngày</button><br>
+            Kết quả
+            <div id="ketqua"> </div>
+        </fieldset>
+    </form>
+
+    <script>
+        function data() {
+            var month = parseInt(document.getElementById("thang").value);
+            var year = parseInt(document.getElementById("nam").value);
+
+            switch (month) {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    document.getElementById("ketqua").innerHTML = 31 + "  ngày";
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    document.getElementById("ketqua").innerHTML = 30 + "  ngày";
+                    break;
+                case 2:
+                    if (year % 4 == 0) {
+                        if (year % 100 == 0) {
+                            if (year % 400 == 0) {
+                                document.getElementById("ketqua").innerHTML = 29 +"  ngày";
+                            } else {
+                                document.getElementById("ketqua").innerHTML = 28 +"  ngày";
+                            }
+                        } else {
+                            document.getElementById("ketqua").innerHTML = 29 +"  ngày";
+                        }
+                    } else {
+                        document.getElementById("ketqua").innerHTML = 28 +"  ngày";
+                    }
+                    break;
+                default:
+                    document.getElementById("ketqua").innerHTML = "không hợp lệ";
+
+            }
+
+        }
+    </script>
+</body>
+</html>

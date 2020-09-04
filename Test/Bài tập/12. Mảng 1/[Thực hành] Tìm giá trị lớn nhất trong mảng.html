@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Tìm giá trị lớn nhất trong mảng</title>
+</head>
+<body>
+<script>
+    var x=[1,677,53];
+    var max=x[x.length-x.length];
+    var index=0;
+    for (i=1;i<=x.length;i++){
+        if (x[i]>max){
+            max=x[i];
+            index=i;
+        }
+    }
+    console.log("max: " +max  )
+</script>
+</body>
+</html>

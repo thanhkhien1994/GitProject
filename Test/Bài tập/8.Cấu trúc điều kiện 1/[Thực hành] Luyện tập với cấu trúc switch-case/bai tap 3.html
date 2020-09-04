@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+</head>
+<body>
+<script>
+    var value = parseInt(prompt("Type a number"));
+
+    switch (value){
+        case 0:
+            alert(0);
+            break;
+        default:
+            var check = value>0;
+            switch (check) {
+                case true:
+                    alert(1);
+                    break;
+                case false:
+                    alert(-1);
+            }
+    }
+</script>
+
+
+</body>
+</html>

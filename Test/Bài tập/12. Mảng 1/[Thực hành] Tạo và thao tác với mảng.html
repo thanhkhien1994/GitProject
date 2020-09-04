@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Tạo và thao tác với mảng</title>
+
+</head>
+<body>
+    <input type="text" id="demo">
+    <input type="button" id="demo2" value="add" onclick="add()">
+    <input type="button" id="demo2" value="display" onclick="display()">
+    <div id="result"></div>
+
+    <script>
+        var x=0;
+        let array= Array();
+
+    function add() {
+            array[x]=document.getElementById("demo").value;
+        alert("số: " + array[x] + " đã thêm vào mảng " + x);
+        x++;
+        document.getElementById("demo ").value = "";
+
+    }
+        function display() {
+            let e = "<hr/>";
+            for (let i = 0; i < array.length; i++) {
+                e += "Element " + i + " = " + array[i] + "<br/>";
+            }
+            document.getElementById("result").innerHTML = e;
+        }
+    </script>
+
+
+</body>
+</html>

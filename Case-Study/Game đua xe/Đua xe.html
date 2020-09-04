@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="moto.js"></script>
-    <script src="oto.js"></script>
-    <script src="Update.js"></script>
-    <script src="Start.js"></script>
+    <link rel="stylesheet" href="styleGame.css">
+    <script src="classMoto.js"></script>
+    <script src="classOto.js"></script>
+    <script src="updateGame.js"></script>
+    <script src="startGame.js"></script>
     <script src="vaCham.js"></script>
 </head>
 <body onload="BatDau()" >
 <canvas id="_canvas" width="500" height="600" style="border: 1px solid #000000; " ></canvas>
+<table border="1">
+    <tr>
+        <td><p id="score"></p></td>
+    </tr>
+</table>
 
 </body>
 <script>
-    var c        = document.getElementById("_canvas");
-    var ctx      = c.getContext("2d");
+    var ctx = document.getElementById("_canvas").getContext("2d");
 </script>
 </html>

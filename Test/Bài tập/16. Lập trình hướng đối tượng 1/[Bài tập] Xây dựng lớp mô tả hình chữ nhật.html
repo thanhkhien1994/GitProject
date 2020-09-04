@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Xây dựng lớp mô tả hình chữ nhật</title>
+</head>
+<body>
+<div> Hình chữ nhật</div><br>
+<input id="_input1" type="number"><br>
+<input id="_input2" type="number"><br>
+<button id="click" onclick="_Rectangle()">
+    Kết quả
+</button><br>
+<i id="ketqua"></i><br>
+<i id="ketqua2"></i><br>
+<canvas id="demo" style="width: 40px;height: 40px;border: 1px solid #d43f3f"></canvas>
+
+<script>
+
+    function Rectangle(d,r) {
+        this.d = d;
+        this.r = r;
+
+        this.dientich = function () {
+            return this.d * this.r;
+        }
+        this.chuvi = function () {
+            return (this.d + this.r) * 2;
+        }
+    }
+
+    function _Rectangle() {
+        let a = parseFloat(document.getElementById("_input1").value);
+        let b = parseFloat(document.getElementById("_input2").value);
+        let hinhvuong = new Rectangle(a,b);
+
+        let _canvas = document.getElementById("demo");
+        _canvas.setAttribute("style","width: px;height: px;border: 1px solid #d43f3f");
+
+        document.getElementById("ketqua").innerHTML ="Diện tích là: "+ hinhvuong.dientich();
+        document.getElementById("ketqua2").innerHTML = "Chu vi là: "+ hinhvuong.chuvi();
+    }
+
+
+</script>
+</body>
+</html>

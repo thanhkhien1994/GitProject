@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  table{
+      background-image: url("bg.jpg");
+      color:gold
+  }
+</style>
+<body>
+    <div style="margin-left: 25%; margin-top: 100px;">
+        <h1>Ai là triệu phú</h1>
+       <table border="1" width="500px" height="300px" id="table" style="border-collapse: collapse;">
+        <tr>
+            <th colspan="2" rowspan="2"><p id="display_Question"></p></th>
+            <td width="100px" onclick="star_Game();"><p id="s">Star Game</p</td>
+        </tr>
+        <tr>
+            <td><p id="score">Score: 0</p></td>
+        </tr>
+        <tr height="70px">
+            <td width="225px" onclick="_answer(0);"><p id="0"></p></td>
+            <td width="225px" onclick="_answer(1);"><p id="1"></p></td>
+            <td><p id="level">Level: 1</p></td>
+        </tr>
+        <tr height="70px">
+            <td onclick="_answer(2);"><p id="2"></p></td>
+            <td onclick="_answer(3);"><p id="3"></p></td>
+            <td><p id="money">Money: 0$</p></td>
+        
+        
+    </table> 
+    <button id="restart" onclick="_reload();">Restart</button>  
+    </div>
+    <script src="question.js"></script>
+    <script src="js.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Biến, Toán tử</title>
+</head>
+<body>
+<form>
+    Toán <input id="toan" type="text"/><br>
+    Lý <input id="ly" type="text"/> <br>
+    Hóa <input id="hoa" type="text"/><br>
+    <button type="button" onclick ="tinhdiem()">Tính</button>
+</form>
+
+<script>
+    function tinhdiem() {
+
+        var diemtoan=parseInt(document.getElementById("toan").value);
+        var diemly=parseInt(document.getElementById('ly').value);
+        var diemhoa=parseInt( document.getElementById('hoa').value);
+
+        var diemtrungbinh=(diemtoan+diemhoa+diemly)/3;
+        var diemtong=diemtoan+diemly+diemhoa;
+
+       document.write("điểm trung bình là: " +diemtrungbinh,"  và   ", "tổng điểm là:  "+diemtong);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Sự kiện bàn phím</title>
+</head>
+<body onload="docReady()">
+    <img src="img/1.png" height="210" width="188" id="nobita" style="position: absolute;left:0;top:0"/>
+    <script>
+        function dichuyenanhlen(){
+            var element = document.getElementById("nobita");
+            element.style.top = parseInt(element.style.top) - 10  +"px";
+        }
+        function dichuyenanhxuong() {
+            var element = document.getElementById("nobita");
+            element.style.top = parseInt(element.style.top) + 10  +"px";
+        }
+        function dichuyenanhsangtrai() {
+            var element = document.getElementById("nobita");
+            element.style.left = parseInt(element.style.left) - 10  +"px";
+        }
+        function dichuyenanhsangphai() {
+            var element = document.getElementById("nobita")
+            element.style.left = parseInt(element.style.left) + 10  +"px";
+        }
+        function banphimlenxuong(evt) {
+            switch (evt.keyCode) {
+                case 37:
+                    dichuyenanhsangtrai();
+                    break;
+                case 39:
+                    dichuyenanhsangphai();
+                    break;
+                case 38:
+                    dichuyenanhlen();
+                    break;
+                case 40:
+                    dichuyenanhxuong();
+                    break;
+            }
+        }
+        function docReady() {
+            window.addEventListener("keydown", banphimlenxuong);
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+*{/* Xét nội dung toàn trang*/
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: Tahoma;
+    font-size: 16px;
+}
+
+#menu {
+    width: 700px;
+    height: 40px;
+    background: #4a065a;
+    margin: 50px auto;
+
+}
+ul.root > li {
+    list-style: none;
+    float: left;
+
+}
+ul.root > li > a {
+    text-decoration: none;
+    color: #FFF;
+    padding:  0px 15px 0px 15px;
+    line-height: 40px;
+    display: block;
+}
+ul.root > li > a:hover {
+    background: orange;
+    color: #d61b06;
+    transition: ease-in-out 0.35s;
+    -moz-transition: ease-in-out 0.35s;
+    -webkit-transition: ease-in-out 0.35s;
+}
+ul.submenu li.nam {
+    width: 200px;
+    background:#4a065a;
+    min-height: 20px;
+}
+ul.submenu li.nam > a {
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+}
+ul.submenu li.nu > a {
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+}
+.list {
+    display: none;
+}
+ul.submenu li ul.list

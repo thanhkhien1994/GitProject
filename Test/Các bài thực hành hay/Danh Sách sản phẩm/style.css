@@ -1,0 +1,66 @@
+html body {
+    padding:0;
+    margin:0;
+    background: #f1f1f1;
+    font-family: sans-serif;
+    font-size: 16px;
+
+}
+h1 {
+    margin-left: 200px;
+    color: blue;
+    padding: 0px 15px 0px 15px;
+}
+h2 {
+    margin-left: 230px;
+}
+.container {
+    width: 700px;
+    margin:10px auto;
+    background: #FFF;
+    padding: 10px;
+}
+div.animation{
+    width: 700px;
+    margin:10px auto;
+    background: #FFF;
+    padding: 10px;
+}
+ul li {
+    list-style: none;
+}
+
+.container ul.tab {
+    display: flex;
+    margin: 10px auto;
+}
+li.tab-item {
+    background: #d43f3f;
+    padding: 10px;
+    color: #f1f1f1;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    text-align: center;
+}
+.product {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.animation ul.product li img {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+}
+#best-sell, #new {
+    display: none;
+}
+ul.tab li.active {
+    background: blueviolet;
+}
+.product img{
+    margin: 0px auto;
+
+}

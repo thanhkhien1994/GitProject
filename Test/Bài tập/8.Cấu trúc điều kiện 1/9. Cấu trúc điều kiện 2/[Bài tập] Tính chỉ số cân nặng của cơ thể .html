@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Tính chỉ số cân nặng của cơ thể</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <h1>Tính chỉ số cân nặng của cơ thể</h1><br>
+            <h3>Cân nặng của bạn</h3><br>
+            <input id="data1" type="number"> kg
+            <h3>Chiều cao của bạn</h3><br>
+            <input id="data2" type="number"> cm<br><br>
+            <button type="button" onclick="ketqua()">Kết quả</button>
+            <p id="hienthi">Chỉ số BMI của bạn là:</p>
+        </fieldset>
+    </form>
+
+    <script>
+        function ketqua() {
+            var a=parseFloat(document.getElementById("data1").value);
+            var b=parseFloat(document.getElementById("data2").value);
+            var ibm = a/(b*b);
+
+            if (ibm<18) {
+                document.getElementById("hienthi").innerHTML = ibm + " >> Chỉ số BMI của bạn là: Quá gầy";
+            }else if(ibm<25) {
+                document.getElementById("hienthi").innerHTML = ibm + " >> Chỉ số BMI của bạn là: Bình thường Nha";
+            }else if(ibm<30) {
+                document.getElementById("hienthi").innerHTML = ibm + " >> Chỉ số BMI của bạn là: Hơi béo tí";
+            }else document.getElementById("hienthi").innerHTML = ibm + " >> Chỉ số BMI của bạn là: Quá béo";
+        }
+
+    </script>
+
+</body>
+</html>

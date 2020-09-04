@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+  function mydate(day,month,year) {
+      this.ngay=day;
+      this.month=month;
+      this.year=year;
+
+      this.setDay=function (day) {
+          this.ngay=day;
+      }
+      this.setMonth=function (month) {
+            this.month=month;
+      }
+      this.setYear=function (year) {
+            this.year=year;
+      }
+  }
+  let date= new mydate();
+  date.setDay(11);
+  date.setMonth(9);
+  date.setYear(1994);
+  alert(date.ngay+"/"+date.month+"/"+date.year);
+
+
+
+
+ /* let date= new myDate(1,1,1990);
+  function myDate(cac,month,year) {
+      this.buoi=cac;
+      this.month=month;
+      this.year=year;
+
+      this.getDay=function () {
+          return this.buoi;
+      }
+      this.getMonth=function () {
+          return this.month;
+      }
+      this.getYear=function () {
+          return this.year;
+      }
+  }
+
+  let day=date.getDay();
+  let month=date.getMonth();
+  let year=date.getYear();
+
+  alert(day+"/"+month+"/"+year) */
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Hiển thị các số nguyên tố đầu tiên</title>
+</head>
+<body>
+<input type="number" id="demo">
+<button onclick="click()">kiểm tra</button>
+<script>
+    var count=0;
+    var N=2;
+    var number=parseInt(document.getElementById("demo").value);
+    var i;
+    if (count < number) {
+        kiemtra();
+    }
+    function kiemtra(so) {
+        for (i=1;i<=number;i++){
+            if (number%i==0){
+                count++;
+            }
+        }
+    }
+
+</script>
+</body>
+</html>

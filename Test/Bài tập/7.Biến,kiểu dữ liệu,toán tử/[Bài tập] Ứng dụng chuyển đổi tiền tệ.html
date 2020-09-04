@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Ứng dụng chuyển đổi tiền tệ</title>
+</head>
+<body>
+
+    <input type="number" id="nhapvao">
+
+    <select id="luachon1">
+        <option value="VND">VND</option>
+        <option value="USD">USD</option>
+    </select>
+    <select id="luachon2">
+        <option value="USD">USD</option>
+        <option value="VND">VND</option>
+    </select>
+
+<button type="button " onclick="doitien()"> Chuyển đổi </button>
+<div id="abc"></div>
+<script>
+
+    function doitien(){
+            var nhapvao1 = document.getElementById('nhapvao').value;
+            var nhapvao=parseInt(nhapvao1);
+            var luachon1 = document.getElementById('luachon1').value;
+            var luachon2 = document.getElementById('luachon2').value;
+            var ketqua =nhapvao;
+
+            if (luachon1==luachon2) {
+                document.getElementById('abc').innerHTML = +ketqua;
+
+            }
+            else if(luachon1=="USD" && luachon2=="VND") {
+                ketqua = nhapvao*23000;
+                document.getElementById("abc").innerHTML = +ketqua;
+
+            }
+                else if (luachon1=="VND" && luachon2=="USD") {
+                ketqua = nhapvao / 23000;
+                document.getElementById("abc").innerHTML = +ketqua;
+            }
+
+
+    }
+</script>
+</body>
+</html>

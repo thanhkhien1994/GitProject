@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+
+<body>
+<form>
+    <input id="data1" type="number"/>
+    <input id="data2" type="number"/>
+    <button type="button" onclick="cong()">Cộng</button>
+    <button type="button" onclick="tru()">Trừ</button>
+    <button type="button" onclick="nhan()">Nhân</button>
+    <button type="button" onclick="chia()">Chia</button>
+
+
+</form>
+
+<script>
+   function cong() {
+        var a=parseInt(document.getElementById('data1').value);
+        var b=parseInt(document.getElementById("data2").value);
+        var tong=a+b
+       document.write('Kết quả:  ' +tong)
+   }
+   function tru() {
+       var a=parseInt(document.getElementById('data1').value);
+       var b=parseInt(document.getElementById("data2").value);
+       var tong=a-b
+       document.write('Kết quả:  ' +tong)
+   }
+   function nhan() {
+       var a=parseInt(document.getElementById('data1').value);
+       var b=parseInt(document.getElementById("data2").value);
+       var tong=a*b
+       document.write('Kết quả:  ' +tong)
+   }
+   function chia() {
+       var a=parseInt(document.getElementById('data1').value);
+       var b=parseInt(document.getElementById("data2").value);
+       var tong=a/b
+       document.write("kết quả:  " +tong)
+
+   }
+</script>
+</body>
+</html>

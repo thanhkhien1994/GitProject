@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Tạo bàn cờ caro đơn giản</title>
+</head>
+<body>
+
+<p id="khien"></p>
+
+
+</body>
+</html>
+
+<script>
+    document.getElementById("khien").innerHTML="Cờ caro"
+</script>
+<script>
+
+    var total=  "<table border='1' cellspacing='' cellpadding='20'>"
+
+
+    for (i=1;i<=20;i++){
+        total=total+"<tr>";
+        for(j=1;j<=20;j++){
+            var kiemtra="id"+i+","+j;
+            total=total + "<td id="+kiemtra+" onclick='haha()' ondblclick='hehe()'  value='&#160&#160'></td>";
+        }
+        total=total+"</tr>";
+    }
+    total=total+"</table>";
+
+    document.write(total);
+
+    var pop=0;
+    function haha() {
+        if (pop==0){
+            document.getElementById(event.srcElement.id).innerHTML="X"
+            pop=1;
+        }else if(pop==1){
+            document.getElementById(event.srcElement.id).innerHTML="O"
+            pop=0;
+        }
+    }
+    function hehe() {
+        document.getElementById(event.srcElement.id).innerHTML="&#160&#160"
+
+    }
+</script>

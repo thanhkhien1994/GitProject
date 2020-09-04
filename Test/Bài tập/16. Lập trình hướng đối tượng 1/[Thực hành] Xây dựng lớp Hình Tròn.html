@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Xây dựng lớp Hình Tròn</title>
+</head>
+<body>
+<script>
+    function Circle(radius) {
+        this.bankinh=radius;
+
+        this.getRadius=function () {
+            return this.bankinh;
+
+        }
+        this.getArea=function () {
+            return Math.PI * radius * radius;
+
+
+        }
+    }
+    let x= parseFloat(prompt("Nhập vào bán kính chúng tôi sẽ cho bạn biết diện tích hình tròn: "));
+    let hinhtron=new Circle(x);
+    let a=hinhtron.getRadius();
+    let b=hinhtron.getArea();
+
+    alert("Bán kính đường trong là: "+a+" , diện tích hình tròn là : "+b);
+
+
+</script>
+
+</body>
+</html>

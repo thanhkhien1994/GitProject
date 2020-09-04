@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="1368px" height="768px" style="border:1px solid #d3d3d3">
+    <script>
+        //Vẽ một hình tròn đơn giản với kích thước cố định
+
+        function vongtron(x, y, bankinh){
+            this.x = x;
+            this.y = y;
+            this.bankinh = bankinh;
+        }
+        function taovongtron(){
+            var ctx = document.getElementById("myCanvas").getContext("2d");
+            var circle= new vongtron(500, 500, 80);
+
+            ctx.beginPath();
+            ctx.arc(circle.x, circle.y, circle.bankinh, 0, 2 * Math.PI);
+            ctx.fill();
+        }
+        taovongtron();
+    </script>
+</body>
+</html>

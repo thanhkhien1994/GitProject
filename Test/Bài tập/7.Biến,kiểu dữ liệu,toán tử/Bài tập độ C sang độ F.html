@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Độ C to Độ F</title>
+</head>
+<body>
+<h1>Chuyển đổi nhiệt độ</h1>
+
+<p><input id="nhietdo" type="number"></p>
+Chuyển từ
+
+ <select id="chuyentu">
+        <option value="doC">Độ C</option>
+        <option value="doF">Độ F</option>
+ </select>
+<select id="chuyenthanh">
+    <option value="doF">Độ F</option>
+    <option value="doC">Độ C</option>
+</select>
+<br><br>
+<button onclick="ketqua()">Kết Quả</button>
+<h1 id="hienthi">Đây là kết quả</h1>
+
+<script>
+    function ketqua() {
+
+        var dulieu = document.getElementById("nhietdo").value;
+        var dulieu1 = parseInt(dulieu);
+        var chuyentu = document.getElementById("chuyentu").value;
+        var chuyenden = document.getElementById("chuyenthanh").value;
+        var ketqua;
+
+        if (chuyentu==chuyenden) {
+            document.getElementById("hienthi").innerHTML = dulieu;
+            return;
+        }
+        else if (chuyentu == "doC" && chuyenden == "doF") {
+            ketqua = (9 * dulieu1 ) / 5 + 32;
+            document.getElementById("hienthi").innerHTML = ketqua;
+        }
+        else if (chuyentu =="doF"&& chuyenden == "doC") {
+            ketqua =(5 * (dulieu1 - 32) / 9);
+            document.getElementById("hienthi").innerHTML =ketqua;
+
+        }
+    }
+</script>
+
+</body>
+</html>

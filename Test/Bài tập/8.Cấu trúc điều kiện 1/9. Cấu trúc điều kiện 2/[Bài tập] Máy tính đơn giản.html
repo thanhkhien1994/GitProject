@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Máy tính đơn giản</title>
+</head>
+<style>
+    
+    table{
+        color: blue;
+        background-color: black;
+        width: 15%;
+    }
+    button{
+        color: white;
+        background-color: black;
+    }
+</style>
+<body>
+    <table border="1" cellspacing="1" cellpadding="20">
+        <tr>
+            <th colspan="4" >
+                <p id="nhapvao">Máy tính Casio</p>
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="4" >
+                <p id="ketqua">Kết quả</p>
+            </th>
+        </tr>
+
+        <tr>
+            <th>
+                <button onclick="mot()" id="mot">1</button>
+            </th>
+            <th>
+                <button onclick="hai()" id="hai">2</button>
+            </th>
+            <th>
+                <button onclick="ba()" id="ba">3</button>
+            </th>
+            <th>
+                <button onclick="cong()" id="cong">+</button>
+            </th>
+        </tr>
+
+        <tr>
+            <th>
+                <button onclick="bon()" id="bon">4</button>
+            </th>
+            <th>
+                <button onclick="nam()" id="nam">5</button>
+            </th>
+            <th>
+                <button onclick="sau()" id="sau">6</button>
+            </th>
+            <th>
+                <button id="tru" onclick="tru()">-</button>
+            </th>
+        </tr>
+
+        <tr>
+            <th>
+                <button id="bay" onclick="bay()">7</button>
+            </th>
+            <th>
+                <button id="tam" onclick="tam()">8</button>
+            </th>
+            <th>
+                <button id="chin" onclick="chin()">9</button>
+            </th>
+            <th>
+                <button id="nhan" onclick="nhan()">*</button>
+            </th>
+        </tr>
+
+        <tr>
+            <th>
+                <button id="xoa" onclick="xoa()">C</button>
+            </th>
+            <th>
+                <button id="khong" onclick="khong()">0</button>
+            </th>
+            <th>
+                <button id="bang" onclick="bang()">=</button>
+            </th>
+            <th>
+                <button id="chia" onclick="chia()">/</button>
+            </th>
+        </tr>
+    </table>
+    
+    <script>
+        function mot() {
+            var mot=parseInt(document.getElementById("nhapvao").innerHTML = 1 );
+        }
+        function hai() {
+            var hai=parseInt(document.getElementById("nhapvao").innerHTML = 2 );
+        }
+        function ba() {
+            var ba=parseInt(document.getElementById("nhapvao").innerHTML = 3 );
+        }
+        function bon(){
+            var bon=parseInt(document.getElementById("nhapvao").innerHTML = 4 );
+        }
+        function nam() {
+            var nam=parseInt(document.getElementById("nhapvao").innerHTML = 5 );
+        }
+        function sau() {
+            var sau=parseInt(document.getElementById("nhapvao").innerHTML = 6 );
+        }
+        function bay() {
+            var bay=parseInt(document.getElementById("nhapvao").innerHTML = 7 );
+        }
+        function tam() {
+            var tam=parseInt(document.getElementById("nhapvao").innerHTML = 8 );
+        }
+        function chin() {
+            var chin=parseInt(document.getElementById("nhapvao").innerHTML = 9 );
+        }
+        function khong() {
+            var khong=parseInt(document.getElementById("nhapvao").innerHTML = 0 );
+        }
+        function cong() {
+            var cong=parseInt(document.getElementById("nhapvao").innerHTML = "Cộng" );
+        }
+        function tru() {
+            var tru=parseInt(document.getElementById("nhapvao").innerHTML = "Trừ" );
+        }
+        function nhan() {
+            var nhan=parseInt(document.getElementById("nhapvao").innerHTML = "Nhân" );
+        }
+        function chia() {
+            var chia=parseInt(document.getElementById("nhapvao").innerHTML = "Chia" );
+        }
+        function xoa() {
+            var xoa=parseInt(document.getElementById("nhapvao").innerHTML = "Xóa" );
+        }
+        function bang() {
+            var bang=parseInt(document.getElementById("nhapvao").innerHTML = "Bằng" );
+        }
+
+
+
+    </script>
+
+</body>
+</html>

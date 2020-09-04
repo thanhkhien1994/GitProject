@@ -1,14 +1,50 @@
-function Phone(name) {
+let nokia = new Phone(nokia, mess);
+let iphone = new Phone(iphone, mess);
+
+function Phone(name, id) {
+    this.id = id;
     this.name = name;
-    this.battery = 100;
+    this.pin = 100;
+    this.mess = "";
     this.inbox = [];
     this.sent = [];
+    this.status = false;
 
-    this.statusPhone = function () {
 
+    this.on = function () {
+        this.status = true;
     }
-    this.statsPin = function () {
 
+    this.off = function () {
+        this.status = false;
     }
-    this.
+
+    this.isStatus = function () {
+        if (this.status == true) {
+            return "Bật";
+        } else return "Tắt";
+    }
+
+    this.SupperChange = function () {
+        if(this.pin < 100){
+            this.pin++;
+        }
+        
+    }
+
+    this.editMess = function(mobile,messinger){
+        mobile.mess = Mess
+    }
+
+    this.inboxMess = function(){
+        return this.inbox;
+    }
+
+    this.sentMess = function(mobile, messinger){
+        mobile.inbox.unShift(messinger);
+    }
+
 }
+
+let iphone = new Phone();
+
