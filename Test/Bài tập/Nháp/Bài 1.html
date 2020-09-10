@@ -5,18 +5,16 @@
     <title>Title</title>
 </head>
 <body>
-    <p>Bài 1: Viết chương trình nhận vào một số từ hộp thoại, việc nhập kết thúc khi người dùng nhập vào giá trị -1. Mỗi giá trị nhập được sẽ được hiển thị ra và thực hiện tính tổng các giá trị đó.</p>
+Bán kính
+<input type="number" id="rd">
+<button onclick="Check();"> tính </button>
 
-    <script>
-        var num=parseInt(prompt("emter number"));
-        var total = 0;
-        while (num!=-1){
-            num= parseInt(prompt("enter number:  "));
-            alert(num) ;
-            total+=num;
-        }
-        alert(total)
-
-    </script>
+<script>
+    function Check(){
+        let r = parseInt(document.getElementById("rd").value);
+        result = 2*Math.PI*r;
+        document.write(result);
+    }
+</script>
 </body>
 </html>

@@ -21,14 +21,12 @@
   <component name="ChangeListManager">
     <list default="true" id="823c3efa-282d-4392-a455-8d59d3375c8c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-Study/Game đua xe/Start.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-Study/Game đua xe/Update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-Study/Game đua xe/moto.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-Study/Game đua xe/oto.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-Study/Game đua xe/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-Study/Game đua xe/Đua xe.html" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/Game đua xe/Đua xe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week 4/Lớp điện thoại/smartPhone.html" beforeDir="false" afterPath="$PROJECT_DIR$/week 4/Lớp điện thoại/smartPhone.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week 4/Lớp điện thoại/smartPhone.js" beforeDir="false" afterPath="$PROJECT_DIR$/week 4/Lớp điện thoại/smartPhone.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ai-là-triệu-phú" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Bài tập/7.Biến,kiểu dữ liệu,toán tử/Bài tập chuyển đổi tiền tệ.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Bài tập/7.Biến,kiểu dữ liệu,toán tử/Bài tập chuyển đổi tiền tệ.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Bài tập/7.Biến,kiểu dữ liệu,toán tử/Bài tập độ C sang độ F.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Bài tập/7.Biến,kiểu dữ liệu,toán tử/Bài tập độ C sang độ F.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Bài tập/Nháp/Bài 1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Bài tập/Nháp/Bài 1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Bài tập/Nháp/Bài 2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Bài tập/Nháp/Bài 2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/test-phone-OOP.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test/test-phone-OOP.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +73,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -107,6 +106,10 @@
       <workItem from="1598836534951" duration="1179000" />
       <workItem from="1598952980757" duration="17000" />
       <workItem from="1598953090560" duration="20000" />
+      <workItem from="1599622074830" duration="2588000" />
+      <workItem from="1599624910732" duration="3337000" />
+      <workItem from="1599634147558" duration="9619000" />
+      <workItem from="1599668114051" duration="776000" />
     </task>
     <servers />
   </component>
@@ -145,11 +148,11 @@
     </state>
     <state x="263" y="77" key="IDE.errors.dialog/0.0.1366.728@0.0.1366.728" timestamp="1598530312365" />
     <state x="263" y="103" key="IDE.errors.dialog/0.0.1366.738@0.0.1366.738" timestamp="1598339496785" />
-    <state x="117" y="0" key="SettingsEditor" timestamp="1598543611036">
+    <state x="117" y="0" key="SettingsEditor" timestamp="1599624954243">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="149" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1598530126376" />
-    <state x="117" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1598543611036" />
+    <state x="117" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1599624954243" />
     <state x="368" y="29" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1598532091795" />
     <state x="199" y="79" width="565" height="285" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1598543609366">
       <screen x="0" y="0" width="1366" height="738" />

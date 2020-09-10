@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let x = prompt("Nhập vào 1 đoạn văn bản bất kì");
+        let count = 0;
+        function myFunction(str) {
+            let newArrr = ["a", "o", "u", "i", "e"];
+            let arr = str.split("");
+            for (let i = 0; i < arr.length; i++) {
+                for (j = 0; j < newArrr.length; j++) {
+                    if (arr[i] == newArrr[j]) {
+                        count++;
+                    }
+                }
+            }
+            console.log(count);
+            console.log(arr);
+            console.log(newArrr);
+        }
+        myFunction(x);
+    </script>
+
+</body>
+
+</html>

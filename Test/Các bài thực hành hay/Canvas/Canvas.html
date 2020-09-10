@@ -8,21 +8,23 @@
     <canvas id="myCanvas" width="1368px" height="768px" style="border:1px solid #d3d3d3">
     <script>
         //Vẽ một hình tròn đơn giản với kích thước cố định
+        var ctx = document.getElementById("myCanvas").getContext("2d");
 
-        function vongtron(x, y, bankinh){
+        function vongtron(x, y, bankinh, ctx){
             this.x = x;
             this.y = y;
             this.bankinh = bankinh;
-        }
-        function taovongtron(){
-            var ctx = document.getElementById("myCanvas").getContext("2d");
-            var circle= new vongtron(500, 500, 80);
 
-            ctx.beginPath();
-            ctx.arc(circle.x, circle.y, circle.bankinh, 0, 2 * Math.PI);
-            ctx.fill();
+            this.draw = function(){
+                
+                ctx.beginPath();
+                ctx.arc(circle.x, circle.y, circle.bankinh, 0, 2 * Math.PI);
+                ctx.fill();
+            }
         }
-        taovongtron();
+        var circle = new vongtron(500, 500, 80, ctx);
+
+
     </script>
 </body>
 </html>

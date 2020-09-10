@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arrInt = [23, 33, 43, 53, 63, 73, 83, 83, 93, 103];
+        let x = parseInt(prompt("Nhập vào số nguyên X cần tìm"));
+
+        function fromArray(arr, x) {
+            for (let i = arr.length - 1; i >= 0; i--) {
+
+                if (x == arr[i]) {
+                    alert ("true");
+                    alert ("Index: " + i);
+                    break;
+                }
+            }
+
+        } 
+        
+        fromArray(arrInt, x);
+    </script>
+</body>
+</html>
