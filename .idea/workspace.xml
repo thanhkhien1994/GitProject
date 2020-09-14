@@ -20,13 +20,69 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="823c3efa-282d-4392-a455-8d59d3375c8c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/captainamerica.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/captainbanner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/horizontal-straight-seamless-roads-modern-asphalt-repetitive-highways_53562-4801.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/hulk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/ironman.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/left1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/left2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/left3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/left4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/left5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/left6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/left7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/left8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/right1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/right2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/right3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/right4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/right5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/right6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/right7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/right8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/wohGvC.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/js.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/sound/NFF-boy-fatigue.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/sound/NFF-car-hit.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/sound/NFF-coin-04.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/sound/trafficsound.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/supperMan.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week 2/puzz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ai-là-triệu-phú" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Bài tập/7.Biến,kiểu dữ liệu,toán tử/Bài tập chuyển đổi tiền tệ.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Bài tập/7.Biến,kiểu dữ liệu,toán tử/Bài tập chuyển đổi tiền tệ.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Bài tập/7.Biến,kiểu dữ liệu,toán tử/Bài tập độ C sang độ F.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Bài tập/7.Biến,kiểu dữ liệu,toán tử/Bài tập độ C sang độ F.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-Study/Game đua xe/startGame.js" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/Game đua xe/startGame.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-Study/Game đua xe/vaCham.js" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/Game đua xe/vaCham.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-Study/Game đua xe/Đua xe.html" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/Game đua xe/Đua xe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-Study/captan/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-Study/captan/.idea/caseStudyM1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-Study/captan/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-Study/captan/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-Study/captan/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-Study/captan/Functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/captan/Functions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-Study/captan/Human.js" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/captan/Human.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-Study/captan/font/SuperLegendBoy-4w8Y.ttf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/Bài tập/Nháp/Bài 1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Bài tập/Nháp/Bài 1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/Bài tập/Nháp/Bài 2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Bài tập/Nháp/Bài 2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/test OOP.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test/test OOP.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/test-phone-OOP.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test/test-phone-OOP.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week 2/img/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week 2/img/car.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week 2/img/cat1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week 2/img/cat2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week 2/img/cat3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week 2/img/cat4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week 2/img/cat5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week 2/img/monkey1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week 2/img/monkey2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week 2/img/monkey3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week 2/img/monkey4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week 2/img/monkey5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week 2/img/pada1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week 2/img/pada2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week 2/img/pada3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week 2/img/pada4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week 2/img/pada5.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +92,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -48,6 +104,7 @@
     <option name="showToolbar" value="false" />
   </component>
   <component name="ProjectId" id="1g4KIuDApIWquLbyD4IoBkHNjhH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="foldersAlwaysOnTop" value="false" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -64,7 +121,7 @@
     <property name="ToolWindowProblems.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Case-Study/Test Case Study" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -76,6 +133,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\Dự án 1\Case-Study\Test Case Study" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\DELL\Desktop\Dự án\GitProject\week 4\Lớp điện thoại" />
       <recent name="C:\Users\DELL\Desktop\Dự án\GitProject\Test" />
@@ -110,6 +170,13 @@
       <workItem from="1599624910732" duration="3337000" />
       <workItem from="1599634147558" duration="9619000" />
       <workItem from="1599668114051" duration="776000" />
+      <workItem from="1599733732814" duration="96000" />
+      <workItem from="1599735415737" duration="29556000" />
+      <workItem from="1599805826923" duration="3968000" />
+      <workItem from="1599814306805" duration="9858000" />
+      <workItem from="1599884677273" duration="3786000" />
+      <workItem from="1599899603474" duration="556000" />
+      <workItem from="1599980126960" duration="123000" />
     </task>
     <servers />
   </component>
@@ -148,16 +215,33 @@
     </state>
     <state x="263" y="77" key="IDE.errors.dialog/0.0.1366.728@0.0.1366.728" timestamp="1598530312365" />
     <state x="263" y="103" key="IDE.errors.dialog/0.0.1366.738@0.0.1366.738" timestamp="1598339496785" />
-    <state x="117" y="0" key="SettingsEditor" timestamp="1599624954243">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="185" y="0" key="SettingsEditor" timestamp="1599900149408">
+      <screen x="74" y="0" width="1292" height="768" />
     </state>
     <state x="149" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1598530126376" />
     <state x="117" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1599624954243" />
     <state x="368" y="29" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1598532091795" />
+    <state x="185" y="0" key="SettingsEditor/74.0.1292.768@74.0.1292.768" timestamp="1599900149408" />
+    <state x="328" y="0" width="877" height="743" maximized="true" key="dock-window-1" timestamp="1599752723256">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state x="328" y="0" width="877" height="743" maximized="true" key="dock-window-1/62.0.1304.768@62.0.1304.768" timestamp="1599752723256" />
+    <state x="62" y="0" width="1141" height="743" key="dock-window-2" timestamp="1599885013313">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state x="62" y="0" width="1141" height="743" key="dock-window-2/62.0.1304.768@62.0.1304.768" timestamp="1599885013313" />
     <state x="199" y="79" width="565" height="285" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1598543609366">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="199" y="79" width="584" height="285" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1366.738@0.0.1366.738" timestamp="1598543609366" />
     <state x="199" y="82" width="565" height="285" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1366.768@0.0.1366.768" timestamp="1598532089040" />
+    <state x="370" y="167" key="run.anything.popup" timestamp="1599832481119">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state x="370" y="167" key="run.anything.popup/62.0.1304.768@62.0.1304.768" timestamp="1599832481119" />
+    <state x="377" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1599804389849">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state x="377" y="89" width="672" height="678" key="search.everywhere.popup/62.0.1304.768@62.0.1304.768" timestamp="1599804389849" />
   </component>
 </project>

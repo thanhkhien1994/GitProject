@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<p>Nhập vào tiền lương của bạn</p>
+<input type="number" id="value" />
+<button onclick="check();">Thực nhận</button>
+<div id="display"></div>
+
+<script>
+    function check(){
+        let luong = parseFloat(document.getElementById("value").value);
+        let thue = 0;
+        var result;
+        const MONTH = 12;
+        const MIN = 10000000;
+        const MAX = 50000000;
+        if(luong>0 && luong<MIN){
+            document.getElementById("display").innerHTML = "Không phải chịu thuế";
+        } else if (luong>= MIN&&luong<=MAX){
+                thue = (thue + luong*(1/10)*MONTH);
+            result = (luong*MONTH) - thue;
+            document.getElementById("display").innerHTML = "thu nhập của bạn sau khi trừ thuế là "+result;
+        } else if (luong > MAX) {
+            thue = thue + (luong * (2 / 10) * MONTH);
+            result = (luong*MONTH) - thue;
+            document.getElementById("display").innerHTML = "thu nhập của bạn sau khi trừ thuế là "+result;
+        }
+
+    }
+</script>
+
+</body>
+</html>

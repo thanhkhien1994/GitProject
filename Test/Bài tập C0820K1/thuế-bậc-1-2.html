@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="value">
+    <select id="select1">
+        <option value="option1">Lương bậc 1</option>
+        <option value="option2">Lương bậc 2</option>
+    </select>
+    <button onclick="check();">
+        Tính Lương
+    </button>
+    <div id="display"></div>
+
+    <script>
+        function check(){
+            var option = document.getElementById("select1").value;
+            var luong = parseFloat(document.getElementById("value").value)
+            if(option == "option1"){
+                document.getElementById("value").value ="";
+                document.getElementById("display").innerHTML = "Lương 1 năm của bạn sau thuế là: " + ((luong*6) + (luong*3*0.9) + (luong*3*0.8));
+            }
+            
+            if(option == "option2"){
+                document.getElementById("value").value ="";
+                document.getElementById("display").innerHTML = "Lương 1 năm của bạn sau thuế là: "+((luong*3) + (luong*3*0.8) + (luong*6*0.8));
+            }
+        }
+
+        
+    </script>
+
+</body>
+</html>

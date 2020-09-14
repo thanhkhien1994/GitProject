@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game puzzle</title>
+</head>
+<body>
+<div id="form" style="background: none;max-width: 700px;max-height: 750px" >
+    <img id="img1" name="1" src="image/r1img1.jpg" height="140" width="700" onclick="changeImg('r1','img1')"/><br>
+    <img id="img2" name="2" src="image/r2img2.jpg" height="140" width="700" onclick="changeImg('r2','img2')"/><br>
+    <img id="img3" name="3" src="image/r3img3.jpg" height="140" width="700" onclick="changeImg('r3','img3')"/><br>
+    <img id="img4" name="2" src="image/r4img2.jpg" height="140" width="700" onclick="changeImg('r4','img4')"/><br>
+    <img id="img5" name="2" src="image/r5img2.jpg" height="140" width="700" onclick="changeImg('r5','img5')"/>
+</div>
+</body>
+</html>
+<script>
+    function changeImg(row,iD) {
+        num=parseInt(document.getElementById(iD).name);
+        if (num!=3){
+            num=num+1;
+        }else {
+            num=1;
+        }
+        document.getElementById(iD).src="image/" + row + "img" + num + ".jpg";
+        document.getElementById(iD).name=num;
+        check();
+    }
+    function check() {
+        ten1=document.getElementById("img1").name;
+        ten2=document.getElementById("img2").name;
+        ten3=document.getElementById("img3").name;
+        ten4=document.getElementById("img4").name;
+        ten5=document.getElementById("img5").name;
+        if(ten1 == ten2 && ten1 == ten3 && ten1 == ten4 && ten1 == ten5){
+            document.getElementById("form").style.backgroundColor='red';
+        }else {
+            document.getElementById("form").style.backgroundColor=null;
+        }
+
+
+    }
+    let a = Math.ceil(Math.random()*4)
+    console.log(a)
+</script>

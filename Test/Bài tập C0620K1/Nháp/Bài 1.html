@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<div class="content">
+    <div class="nokia">
+        <div style="display: block">
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <h1 id="namenokia"></h1>
+                </td>
+                <td>
+                    <span id="batterynokia"></span>
+                </td>
+                <td>
+                    <button id="onOffnokia" onclick="changeStatus(nokia)"></button>
+                </td>
+            </tr>
+        </table>
+        <div id="nokiaFunction">
+            <button onclick="chargeBattery(nokia)">Charge</button>
+            <br>
+            <br>
+            <input type="text" id="nokia" placeholder="Nhập tin nhắn">
+            <button onclick="sendMess(nokia,iphone)">Send</button>
+            <br>
+            <br>
+            <button onclick="viewInbox(nokia)">Inbox</button>
+            <p id="inboxnokia"></p>
+            <button onclick="viewSentMess(nokia)">Sent</button>
+            <p id="sentMessnokia"></p>
+        </div>
+    </div>
+
+    <div class="iphone">
+        <div style="display: block">
+        </div>
+
+        <table>
+            <tr>
+                <td>
+                    <h1 id="nameiphone"></h1>
+                </td>
+                <td>
+                    <span id="batteryiphone"></span>
+                </td>
+                <td>
+                    <button id="onOffiphone" onclick="changeStatus(iphone)"></button>
+                </td>
+            </tr>
+        </table>
+
+        <div id="iphoneFunction">
+            <button onclick="chargeBattery(iphone)">Charge</button>
+            <br>
+            <br>
+            <input type="text" id="iphone" placeholder="Nhập tin nhắn">
+            <button onclick="sendMess(iphone,nokia)">Send</button>
+            <br>
+            <br>
+            <button onclick="viewInbox(iphone)">Inbox</button>
+            <p id="inboxiphone"></p>
+            <button onclick="viewSentMess(iphone)">Sent</button>
+            <p id="sentMessiphone"></p>
+        </div>
+    </div>
+</div>
+<script>
+    function Mobile(name,id) {
+        this.id = id;
+        this.name = name;
+        this.battery = 100;
+        this.status = false;
+        this.message = "";
+        this.inbox = [];
+        this.sentMess = [];
+
+        this.changeStatus = function () {
+            this.status = !this.status;
+        }
+        this.chargeBattery = function () {
+            this.battery = 100;
+            return this.battery;
+        }
+        this.setMessage = function (message) {
+            this.message = message;
+        }
+        this.sendMess = function (message, mobile) {
+            mobile.setMessage(message);
+        }
+        this.getMess = function () {
+            return this.message;
+        }
+        this.viewInbox = function () {
+            return this.inbox;
+        }
+        this.viewSentMess = function () {
+            return this.sentMess;
+        }
+    }
+
+    let nokia = new Mobile("Nokia Xperia","nokia");
+
+    let iphone = new Mobile("iPhone","iphone");
+
+    function changeStatus(mobile) {
+        mobile.changeStatus();
+        let id = mobile.id+"Function";
+        if (mobile.status) {
+            document.getElementById(id).style.display = "";
+        }
+        if (!mobile.status) {
+            document.getElementById(id).style.display = "none";
+        }
+        document.getElementById(""+"onOff"+mobile.id+"").innerHTML = mobile.status ? "On" : "Off";
+    }
+
+    function chargeBattery(mobile) {
+        if (mobile.battery == 100) {
+            alert("Your phone is full");
+        } else {
+            mobile.chargeBattery();
+            document.getElementById("battery"+mobile.id).innerHTML = mobile.battery + "%";
+        }
+    }
+
+    function sendMess(mobile,otherPhone) {
+        let message = document.getElementById(mobile.id).value;
+        mobile.sendMess(message, otherPhone);
+        mobile.sentMess.push(message);
+        otherPhone.inbox.push(message);
+        document.getElementById(mobile.id).value = "";
+        mobile.battery -= 1;
+        document.getElementById("battery"+mobile.id).innerHTML = mobile.battery + "%";
+    }
+
+    function viewInbox(mobile) {
+        let inbox = mobile.viewInbox();
+        let data = '';
+        for (let i = 0; i < inbox.length; i++) {
+            data += inbox[i] + "<br>";
+        }
+        document.getElementById("inbox"+mobile.id).innerHTML = data;
+        mobile.battery -= 1;
+        document.getElementById("battery"+mobile.id).innerHTML = mobile.battery + "%";
+    }
+    function viewSentMess(mobile) {
+        let sentMess = mobile.viewSentMess();
+        let data = "";
+        for (let i = 0; i < sentMess.length; i++) {
+            data += sentMess[i] + "<br>";
+        }
+        document.getElementById("sentMess"+mobile.id).innerHTML = data;
+        mobile.battery -= 1;
+        document.getElementById("battery"+mobile.id).innerHTML = mobile.battery + "%";
+    }
+</script>
+</body>
+</html>

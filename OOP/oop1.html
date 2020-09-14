@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="1000px" height="1000px" style="border: 1px solid;"></canvas>
+</body>
+</html>
+<script>
+    let ctx = document.getElementById("myCanvas").getContext("2d");
+
+    function Car(){
+        this.x = Math.floor(Math.random()*500);
+        this.y = Math.floor(Math.random()*700);
+
+        this.img = new Image();
+        this.img.src = "img/1.png";
+
+        this.drawGame = function(){
+            ctx.drawImage(this.img, this.x, this.y, 50, 50);
+        }
+    }
+
+    let car = new Car();
+    car.drawGame();
+</script>

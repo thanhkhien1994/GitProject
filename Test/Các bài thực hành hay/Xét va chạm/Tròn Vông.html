@@ -1,93 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+
 <body>
-    <canvas id = "canvas" width="400px" height = "400px"  style="border: 1px solid"></canvas>
+    <canvas id="canvas" width="400px" height="400px" style="border: 1px solid"></canvas>
 
     <script>
         /***************** Circle ***************/
 
         function Circle() {
-            this.radius = Math.floor(Math.random() * 30) + 30;
+            this.radius = Math.floor(Math.random() * 30) + 30;  // bán kính
 
-            this.cx = Math.floor(Math.random() * 400);
-            this.cy = Math.floor(Math.random() * 400);
-            this.left = this.cx - this.radius;
-            this.top = this.cy - this.radius;
-            this.right = this.cx + this.radius;
-            this.bottom = this.cy + this.radius;
+            this.cx = Math.floor(Math.random() * 400); // toạ độ x
+            this.cy = Math.floor(Math.random() * 400); // toạ độ y
+            this.left = this.cx - this.radius; // trái
+            this.top = this.cy - this.radius; // trên
+            this.right = this.cx + this.radius; // phải
+            this.bottom = this.cy + this.radius; // dưới
 
-            this.color = "green";
+            this.color = "green"; // màu
 
-            this.typeName = "Circle";
-        }
-        Circle.prototype.resetColor = function() {
-            this.color = "green";
-        }
-        Circle.prototype.draw = function(context) {
-            context.beginPath();
-            context.fillStyle = this.color;
-            context.arc(this.cx, this.cy, this.radius, 0, Math.PI * 2, true);
-            context.closePath();
-            context.fill();
-        }
-        Circle.prototype.setPosition = function(x, y) {
-            this.cx = x + this.radius;
-            this.cy = y + this.radius;
+            this.typeName = "Circle"; // tên
 
-            this.left = x;
-            this.top = y;
-            this.right = this.cx + this.radius;
-            this.bottom = this.cy + this.radius;
-        }
-        Circle.prototype.contains = function(x, y) {
-            var dx = this.cx - x;
-            var dy = this.cy - y;
-
-            return Math.sqrt(dx * dx + dy * dy) <= this.radius;
-        }
-        Circle.prototype.collide = function(shape) {
-            var type = shape.typeName;
-
-            switch (type) {
-                case "Circle":
-                    this.collideWithCircle(shape);
-                    break;
-                case "Rect":
-                    this.collideWithRect(shape)
-                    break;
-                default:
-                    break;
+            this.resetColor = function () {
+                this.color = "green";
             }
+           this.draw = function (context) {
+                context.beginPath();
+                context.fillStyle = this.color;
+                context.arc(this.cx, this.cy, this.radius, 0, Math.PI * 2, true);
+                context.closePath();
+                context.fill();
+            }
+            this.setPosition = function (x, y) {
+                this.cx = x + this.radius;
+                this.cy = y + this.radius;
+
+                this.left = x;
+                this.top = y;
+                this.right = this.cx + this.radius;
+                this.bottom = this.cy + this.radius;
+            }
+            this.contains = function (x, y) {
+                var dx = this.cx - x;
+                var dy = this.cy - y;
+
+                return Math.sqrt(dx * dx + dy * dy) <= this.radius;
+            }
+            this.collide = function (shape) {  // collide: va chạm
+                var type = shape.typeName;
+
+                switch (type) {
+                    case "Circle":
+                        this.collideWithCircle(shape);
+                        break;
+                    case "Rect":
+                        this.collideWithRect(shape)
+                        break;
+                    default:
+                        break;
+                }
+            }
+            this.collideWithCircle = function (circle) {
+                var dx = this.cx - circle.cx;
+                var dy = this.cy - circle.cy;
+
+                var isCollided = Math.sqrt(dx * dx + dy * dy) <= this.radius + circle.radius;
+
+                if (isCollided) this.color = "red";
+            }
+            this.collideWithRect = function (rect) { // xét va chạm 2 hình tròn
+                var px = this.cx;
+                var py = this.cy;
+
+                if (px < rect.left) px = rect.left;
+                else if (px > rect.right) px = rect.right;
+
+                if (py < rect.top) py = rect.top;
+                else if (py > rect.bottom) py = rect.bottom;
+
+                var dx = this.cx - px;
+                var dy = this.cy - py;
+
+                var isCollided = (dx * dx + dy * dy) <= this.radius * this.radius;
+
+                if (isCollided) this.color = "red";
+            }
+
+
         }
-        Circle.prototype.collideWithCircle = function(circle) {
-            var dx = this.cx - circle.cx;
-            var dy = this.cy - circle.cy;
 
-            var isCollided = Math.sqrt(dx * dx + dy * dy) <= this.radius + circle.radius;
 
-            if (isCollided) this.color = "red";
-        }
-        Circle.prototype.collideWithRect = function(rect) { // xét va chạm 2 hình tròn
-            var px = this.cx;
-            var py = this.cy;
 
-            if (px < rect.left) px = rect.left;
-            else if (px > rect.right) px = rect.right;
-
-            if (py < rect.top) py = rect.top;
-            else if (py > rect.bottom) py = rect.bottom;
-
-            var dx = this.cx - px;
-            var dy = this.cy - py;
-
-            var isCollided = (dx * dx + dy * dy) <= this.radius * this.radius;
-
-            if (isCollided) this.color = "red";
-        } /*************** rect.js *******************/
+        /*************** rect.js *******************/
 
         function Rect(left, top, width, height) {
             this.width = width ? width : 100;
@@ -102,21 +111,21 @@
 
             this.typeName = "Rect";
         }
-        Rect.prototype.resetColor = function() {
+        Rect.prototype.resetColor = function () {
             this.color = "blue";
         }
-        Rect.prototype.contains = function(x, y) {
+        Rect.prototype.contains = function (x, y) {
             return x > this.left && x < this.right && y > this.top && y < this.bottom;
         }
 
-        Rect.prototype.setPosition = function(x, y) {
+        Rect.prototype.setPosition = function (x, y) {
             this.left = x;
             this.top = y;
 
             this.right = this.left + this.width;
             this.bottom = this.top + this.height;
         }
-        Rect.prototype.draw = function(context) {
+        Rect.prototype.draw = function (context) {
             context.fillStyle = this.color;
             context.fillRect(this.left, this.top, this.width, this.height);
         } /************** Main *************/
@@ -205,4 +214,5 @@
 
 
 </body>
+
 </html>

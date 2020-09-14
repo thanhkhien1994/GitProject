@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function phone(name, id) {
+            this.name = name;
+            this.id = id;
+            this.batery = 100;
+            this.sent = [];
+            this.inbox = [];
+            this.message = "";
+            this.powerOn = false;
+
+            this.checkOn = function (){ // nếu đang bật thì tắt, tắt thì bật
+                if(this.powerOn === true){
+                    return false;
+                }
+                return true;
+            }
+            this.turnOn = function (){ // Bật
+                this.powerOn = true;
+            }
+            this.turnOff = function (){// Tắt
+                this.checkOn = false;
+            }
+            this.getMessage = function (){ // value sms
+                if(this.checkOn() === false){
+                    return;
+                }
+                this.batery--;
+                return this.message;
+            }
+            this.setMessage = function (){// set sms
+                if(this.checkOn() === false){
+                    return ;
+                }
+                this.batery--;
+                let text = prompt("Nhập tinh nhắn");
+                this.message = text;
+            }
+            this.setInbox = function (text){ // set inbox
+                if(this.checkOn() === false){
+                    return ;
+                }
+                this.batery--;
+                this.inbox.push(text);
+            }
+            this.getSent = function (){
+                if(this.checkOn() === false){
+                    return ;
+                }
+                this.batery--;
+                this.sent.push(this.getMessage());
+            }
+            this.Charge = function (){
+                function chargePower(){
+                    this.batery++;
+                }
+                setInterval(chargePower, 20);
+                while (this.batery == 100){
+                    return;
+                }
+                return this.batery;
+            }
+
+            this.send = function (mobile){
+                mobile.setInbox(this.message);
+                this.sent.push(this.message);
+                this.message = "";
+            }
+        }
+        let nokia = new phone("nokia", 1);
+        let iphone = new phone("iphone", 2);
+
+        while (true){
+            nokia.setMessage();
+
+            exitNow = confirm("bạn có muốn tiếp tục không")
+            if(!exitNow){
+                break;
+            }
+        }
+        if(nokia.Charge()<96){
+            nokia.Charge();
+        }
+
+        nokia.send(iphone);
+        console.log(nokia);
+        console.log(iphone);
+    </script>
+</body>
+</html>
