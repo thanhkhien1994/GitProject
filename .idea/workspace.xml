@@ -20,40 +20,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="823c3efa-282d-4392-a455-8d59d3375c8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/captainamerica.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/captainbanner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/horizontal-straight-seamless-roads-modern-asphalt-repetitive-highways_53562-4801.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/hulk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/ironman.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/left1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/left2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/left3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/left4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/left5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/left6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/left7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/left8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/right1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/right2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/right3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/right4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/right5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/right6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/right7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/right8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/img/wohGvC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/js.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/sound/NFF-boy-fatigue.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/sound/NFF-car-hit.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/sound/NFF-coin-04.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/sound/trafficsound.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/supperMan.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week 2/puzz.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/ball.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/brick.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/Bài tập C0820K1/Bài tập SownCode/lesson1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/Bài tập C0820K1/Bài tập SownCode/lesson2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/Bài tập C0820K1/Bài tập SownCode/lesson3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/Bài tập C0820K1/Bài tập SownCode/lesson4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/Bài tập C0820K1/Bài tập SownCode/lesson5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/Bài tập C0820K1/Bài tập SownCode/lesson6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/Bài tập C0820K1/Bài tập SownCode/lesson7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/Bài tập C0820K1/Bài tập SownCode/lesson8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/Bài tập C0820K1/Bài tập SownCode/lesson9.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week 3/Star-search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week 4/game-simple-movie-object/javascript/js.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-Study/Game đua xe/startGame.js" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/Game đua xe/startGame.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-Study/Game đua xe/vaCham.js" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/Game đua xe/vaCham.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-Study/Game đua xe/Đua xe.html" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/Game đua xe/Đua xe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-Study/Game đua xe/image/duong.png" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/game-car/image/duong.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-Study/Game đua xe/image/oto.png" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/game-car/image/oto.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-Study/Game đua xe/image/xemay.png" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/game-car/image/xemay.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-Study/Game đua xe/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-Study/Test Case Study/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/Test Case Study/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-Study/Test Case Study/js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-Study/Test Case Study/supperMan.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-Study/captan" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/captan" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Case-Study/captan/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Case-Study/captan/.idea/caseStudyM1.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Case-Study/captan/.idea/misc.xml" beforeDir="false" />
@@ -62,27 +50,11 @@
       <change beforePath="$PROJECT_DIR$/Case-Study/captan/Functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/captan/Functions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Case-Study/captan/Human.js" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/captan/Human.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Case-Study/captan/font/SuperLegendBoy-4w8Y.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Bài tập/Nháp/Bài 1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Bài tập/Nháp/Bài 1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Bài tập/Nháp/Bài 2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Bài tập/Nháp/Bài 2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/test OOP.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test/test OOP.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/test-phone-OOP.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test/test-phone-OOP.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week 2/img/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week 2/img/car.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week 2/img/cat1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week 2/img/cat2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week 2/img/cat3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week 2/img/cat4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week 2/img/cat5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week 2/img/monkey1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week 2/img/monkey2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week 2/img/monkey3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week 2/img/monkey4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week 2/img/monkey5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week 2/img/pada1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week 2/img/pada2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week 2/img/pada3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week 2/img/pada4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week 2/img/pada5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Bài tập C0620K1/12. Mảng 1/[Thực hành] Tạo bàn cờ caro đơn giản.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Bài tập C0620K1/12. Mảng 1/[Thực hành] Tạo bàn cờ caro đơn giản.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Các bài thực hành hay/Đua xe/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Các bài thực hành hay/Đua xe/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game-simple-move-object.html" beforeDir="false" afterPath="$PROJECT_DIR$/week 4/game-simple-movie-object/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week 2/Calculation-Simple.html" beforeDir="false" afterPath="$PROJECT_DIR$/week 2/Calculation-Simple.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week 3/Từ điển Anh - Việt.html" beforeDir="false" afterPath="$PROJECT_DIR$/week 3/Từ điển Anh - Việt.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,8 +64,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -104,7 +76,9 @@
     <option name="showToolbar" value="false" />
   </component>
   <component name="ProjectId" id="1g4KIuDApIWquLbyD4IoBkHNjhH" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="foldersAlwaysOnTop" value="false" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -121,7 +95,7 @@
     <property name="ToolWindowProblems.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Case-Study/Test Case Study" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Case-Study/game-car" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -129,14 +103,18 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\Dự án 1\Case-Study\game-car" />
       <recent name="C:\Users\Administrator\Desktop\Dự án 1\Case-Study\Test Case Study" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\Dự án 1\week 4\game-simple-movie-object\image" />
+      <recent name="C:\Users\Administrator\Desktop\Dự án 1\week 4\game-simple-movie-object" />
+      <recent name="C:\Users\Administrator\Desktop\Dự án 1\week 4" />
       <recent name="C:\Users\DELL\Desktop\Dự án\GitProject\week 4\Lớp điện thoại" />
       <recent name="C:\Users\DELL\Desktop\Dự án\GitProject\Test" />
     </key>
@@ -177,6 +155,12 @@
       <workItem from="1599884677273" duration="3786000" />
       <workItem from="1599899603474" duration="556000" />
       <workItem from="1599980126960" duration="123000" />
+      <workItem from="1600066705579" duration="10719000" />
+      <workItem from="1600084041155" duration="5728000" />
+      <workItem from="1600130991858" duration="22927000" />
+      <workItem from="1600217849328" duration="13733000" />
+      <workItem from="1600239758939" duration="6989000" />
+      <workItem from="1600249326601" duration="1004000" />
     </task>
     <servers />
   </component>
@@ -215,12 +199,13 @@
     </state>
     <state x="263" y="77" key="IDE.errors.dialog/0.0.1366.728@0.0.1366.728" timestamp="1598530312365" />
     <state x="263" y="103" key="IDE.errors.dialog/0.0.1366.738@0.0.1366.738" timestamp="1598339496785" />
-    <state x="185" y="0" key="SettingsEditor" timestamp="1599900149408">
-      <screen x="74" y="0" width="1292" height="768" />
+    <state x="174" y="0" key="SettingsEditor" timestamp="1600132103789">
+      <screen x="62" y="0" width="1304" height="768" />
     </state>
     <state x="149" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1598530126376" />
     <state x="117" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1599624954243" />
     <state x="368" y="29" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1598532091795" />
+    <state x="174" y="0" key="SettingsEditor/62.0.1304.768@62.0.1304.768" timestamp="1600132103789" />
     <state x="185" y="0" key="SettingsEditor/74.0.1292.768@74.0.1292.768" timestamp="1599900149408" />
     <state x="328" y="0" width="877" height="743" maximized="true" key="dock-window-1" timestamp="1599752723256">
       <screen x="62" y="0" width="1304" height="768" />
@@ -239,9 +224,9 @@
       <screen x="62" y="0" width="1304" height="768" />
     </state>
     <state x="370" y="167" key="run.anything.popup/62.0.1304.768@62.0.1304.768" timestamp="1599832481119" />
-    <state x="377" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1599804389849">
+    <state x="377" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1600234543125">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
-    <state x="377" y="89" width="672" height="678" key="search.everywhere.popup/62.0.1304.768@62.0.1304.768" timestamp="1599804389849" />
+    <state x="377" y="89" width="672" height="678" key="search.everywhere.popup/62.0.1304.768@62.0.1304.768" timestamp="1600234543125" />
   </component>
 </project>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>9: Viết chương trình cho phép tính diện tích các hình:
+    Hình vuông; Hình chữ nhật; Hình tròn; Tam giác; Hình thang.
+    Người dùng chọn hình cần tính diện tích từ bảng chọn,
+    sau đó khai báo các thông số liên quan và nhận được diện tích của hình:</p>
+<hr>
+<p>Tính diện tích</p>
+<select id="isOption">
+    <option value="hinhvuong">Hình vuông</option>
+    <option value="hinhchunhat">Hình chữ nhật</option>
+    <option value="hinhtron">Hình tròn</option>
+    <option value="hinhtamgiac">Hình tam giác</option>
+    <option value="hinhthang">Hình thang</option>
+</select>
+<button onclick="checkOption();">Start</button>
+<div id="display"></div>
+<script>
+    function checkOption(){
+        let isOption = document.getElementById("isOption").value;
+        if(isOption === "hinhvuong"){
+            let a = parseInt(prompt("Nhập vào cạnh hình vuông"));
+            if(a>0){
+                document.getElementById("display").innerHTML = hinhvuong(a);
+            }else {alert("Không đúng nhập lại")}
+        }
+        if(isOption === "hinhchunhat"){
+            let a = parseInt(prompt("Nhập vào cạnh a"));
+            let b = parseInt(prompt("Nhập vào cạnh b"));
+            if(a>0 && b>0){
+                document.getElementById("display").innerHTML = (hinhchunhat(a,b));
+            }else {alert("Không đúng nhập lại")}
+        }
+        if(isOption === "hinhtron"){
+            let r = parseInt(prompt("Nhập vào bán kính r"));
+            if(r>0){
+                document.getElementById("display").innerHTML =(hinhtron(r));
+            }else {alert("Không đúng nhập lại")}
+        }
+        if(isOption === "hinhtamgiac"){
+            let a = parseInt(prompt("Nhập vào cạnh hình tam giác"));
+            let h = parseInt(prompt("Nhập vào cạnh hình tam giác"));
+            if(a>0&&h>0){
+                document.getElementById("display").innerHTML = (hinhtamgiac(a,h));
+            }else {alert("Không đúng nhập lại")}
+        }
+        if(isOption === "hinhthang"){
+            let l = parseInt(prompt("Nhập vào đáy lớn"));
+            let n = parseInt(prompt("Nhập vào đáy nhỏ"));
+            let h = parseInt(prompt("Nhập vào chiều cao"));
+            if(l>0 && n>0 && h>0){
+                document.getElementById("display").innerHTML =(hinhthang(l,n,h));
+            }else {alert("Không đúng nhập lại")}
+        }
+    }
+    function hinhvuong(a){
+        return a*a;
+    }
+    function hinhchunhat(a,b){
+        return a*b;
+    }
+    function hinhtron(r){
+        return 2*Math.PI*r;
+    }
+    function hinhtamgiac(a,h){
+        return 0.5*a*h
+    }
+    function hinhthang(l,n,h){
+        return ((l+n)*h)/2;
+    }
+</script>
+</body>
+</html>

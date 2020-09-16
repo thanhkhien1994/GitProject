@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>7: Ba  bạn An, Bình và Cường cùng tham gia một trò chơi như sau:
+    Mỗi bạn nắm trong tay một đồng xu,  mỗi đồng xu có hai trạng thái : sấp và ngửa.
+    Theo hiệu lệnh, cả ba bạn cùng đưa đồng xu của mình ra phía trước.
+    Nếu cả ba đồng xu cùng sấp hoặc cùng ngửa thì chưa phát hiện người thua cuộc (hòa nhau).
+    Nếu một bạn có trạng thái đồng xu khác với hai bạn kia
+    ( nghĩa là đồng xu của bạn ấy sấp còn hai người kia ngửa và ngược lại đồng xu của bạn ấy ngửa thì hai người kia sấp)
+    thì bạn đó thắng cuộc. Hãy viết chương trình mô phỏng trò chơi trên.</p>
+<button onclick="checkWin()">
+    play
+</button>
+<div id="display"></div>
+<script>
+    function randomCoin(){
+        return Math.round(Math.random()*1);
+    }
+
+
+    function checkWin(){
+        let an = randomCoin();
+        let binh = randomCoin();
+        let cuong = randomCoin();
+        if(an === binh && cuong !== an){
+            document.getElementById("display").innerHTML= "Cường thắng rồi!"
+        }
+        if(cuong === binh &&  an!== cuong){
+            document.getElementById("display").innerHTML = "An thắng rồi"
+        }
+        if(an === cuong && binh !== an){
+            document.getElementById("display").innerHTML = "Bình thắng rồi!"
+        }
+        if (an === cuong && an === binh){
+            document.getElementById("display").innerHTML= "Lại!"
+        }
+
+        console.log("an: "+an);
+        console.log("cuong: "+cuong);
+        console.log("binh: "+binh);
+    }
+
+
+
+</script>
+
+</body>
+</html>

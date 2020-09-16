@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>6: Viết chương trình xét xem một tam giác có là tam giác vuông hay không khi biết ba cạnh của tam giác.</p>
+<script>
+    let count = 0;
+    let arr = [];
+    while (true){
+        let number = parseFloat(prompt("nhập vào một số là cạnh của một tam giác"));
+        if(number>0){
+            arr.push(number);
+        }else if (number<=0) break;
+        count ++;
+        if(count===3) break;
+    }
+    let a = arr[0]*arr[0];
+    let b = arr[1]*arr[1];
+    let c = arr[2]*arr[2];
+    if(a==b+c || b==c+a || c==b+a){
+        document.write("tam giác vuông");
+    } else document.write("tam giác không vuông");
+</script>
+</body>
+</html>

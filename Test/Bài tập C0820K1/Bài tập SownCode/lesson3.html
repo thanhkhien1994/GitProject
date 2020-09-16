@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>3: Viết chương trình in ra số lớn nhất trong bốn số nhập từ bàn phím với điều kiện chỉ được dùng hai biến.</p>
+<script>
+ let count = 0; // biến 1
+ let arr = [];
+ while (true){
+   arr.push(parseFloat(prompt("Nhập vào một số")));
+   count ++;
+   if(count === 4){
+       break;
+   }
+ }
+ let max = arr[0]; // biến 2
+ //console.log(count)
+
+ while (count>=0) {
+     if(arr[count]>max){
+         max = arr[count];
+     }
+     count --;
+ }
+ document.write("số lớn nhất là: "+max);
+ //console.log(count)
+
+</script>
+</body>
+</html>

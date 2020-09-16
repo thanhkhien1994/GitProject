@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>5: Viết chương trình xét xem một tam giác có là tam giác cân hay không khi biết ba cạnh của tam giác.</p>
+<script>
+    let count = 0;
+    let arr = [];
+    while (true){
+        arr.push(parseFloat(prompt("nhập vào một số là cạnh của một tam giác")));
+        count ++;
+        if(count===3) break;
+    }
+    if(arr[0]==arr[1] ||arr[0] ==arr[2] || arr[2] == arr[1]) document.write("tam giác cân");
+</script>
+</body>
+</html>

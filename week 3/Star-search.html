@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let arrNew = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    let star = new checkStar(arr, arrNew);
+    star.setString();
+    function checkStar(arr1, arr2){
+        this.arr1 = arr1;
+        this.arr2 = arr2;
+
+        this.setString = function (){
+            let exitNow = true;
+            while (exitNow){
+                this.string = prompt("Nhập vào chòm sao bạn cần tìm");
+                this.searchStar();
+                exitNow = confirm("bạn có muốn tiếp tục không");
+            }
+
+        }
+        this.searchStar = function (){ //Phương thức tìm sao
+            let check = false;
+            if(!check){
+                for (let i=0; i< this.arr1.length; i++){
+                    if(arr1[i] === this.string){
+                        alert(`Chùm sao ${this.string} là ${arr2[i]}`);
+                        check = true;
+                    }
+                }
+            }
+            if(!check){
+                for (let i=0; i< this.arr1.length; i++){
+                    if(arr1[i] !== this.string){
+                        check = false;
+                    }
+                }
+                alert("Không tìm thấy");
+            }
+        }
+    }
+
+</script>
+</body>
+</html>

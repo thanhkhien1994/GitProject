@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>2: Viết chương trình in ra số lớn nhất trong bốn số nhập từ bàn phím.</p>
+<script>
+    let exitNow = true;
+    let arr = [];
+    count = 0;
+    while(exitNow){
+        arr.push(parseFloat(prompt("Nhập vào một số")))
+        exitNow = confirm("bạn có muốn tiếp tục không");
+        count ++;
+        if (count === 3) break;
+    }
+    let max = arr[0];
+    for (let i = 0; i< arr.length; i++){
+        if(arr[i]>max){
+            max = arr[i];
+        }
+    }
+    document.write("Số lớn nhất là: " + max);
+</script>
+</body>
+</html>

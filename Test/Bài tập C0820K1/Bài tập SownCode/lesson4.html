@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>4: Viết chương trình xét xem một tam giác có là tam giác đều hay không khi biết ba cạnh của tam giác.</p>
+<script>
+    let arr = [];
+    let count = 3;
+    while (true){
+        arr.push(parseFloat(prompt("Nhập vào một số là cạnh của một tam giác")));
+        count--;
+        if (count === 0) break;
+    }
+    if(arr[0] === arr[1] && arr[0]=== arr[2]){
+        document.write("tam giác đều")
+    } else document.write("không phải tam giác đều");
+
+</script>
+</body>
+</html>
