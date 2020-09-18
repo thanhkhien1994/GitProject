@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>•	Bài 124: Viết hàm kiểm tra trong mảng các số nguyên có tồn tại giá trị chẵn nhỏ hơn 2004 hay không</p>
+</body>
+<script>
+    let arr = [123,444,678,433,7999,4342,555,4,1,2,233];
+    let count = 0;
+    let arrNew = [];
+    for (let i = 0; i < arr.length; i++) {
+        if(arr[i]%2 === 0){
+            if(arr[i]<2004){
+                arrNew.push(arr[i]);
+                count ++;
+            }
+        }
+    }
+    document.write("số nhỏ hơn 2004 là "+arrNew +", tổng có "+ count +" phần tử")
+</script>
+</html>

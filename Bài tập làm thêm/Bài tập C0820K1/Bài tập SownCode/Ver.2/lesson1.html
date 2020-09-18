@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="margin-left: 25%">
+<p>•Bài 101: Viết chương trình nhập tháng, năm.
+    Hãy cho biết tháng đó có bao nhiêu ngày</p>
+<hr>
+Tháng
+<input type="number" id="month">
+Năm
+<input type="number" id="year">
+<button onclick="checkDay();">Kiểm Tra</button>
+<div id="display"></div>
+</body>
+<script>
+    function checkDay(){
+        let month = parseInt(document.getElementById("month").value);
+        let year = parseInt(document.getElementById("year").value);
+        let checkYear = true;
+        if(year>0) {
+            if (year % 4 === 0 && year % 100 !== 0) {
+                checkYear = false;
+            } else if (year % 100 === 0 && year % 400 !== 0) {
+                checkYear = false;
+            } else checkYear = true;
+        }
+        if(!year){
+            document.getElementById("year").style.border = "1px red solid";
+        } else if(year) document.getElementById("year").style.border = "1px blue solid";
+        if(!month){
+            document.getElementById("month").style.border = "1px red solid";
+        }else document.getElementById("month").style.border = "1px blue solid";
+
+        let m = '';
+        if(checkYear){
+            m = "29";
+        }else m = "28";
+
+        let y = '';
+        if(checkYear){
+            y = "là năm nhuận";
+        }else y = "không phải năm nhuận";
+
+        switch (month){
+            case 1:
+                document.getElementById("display").innerHTML = "Tháng 1 có 31 ngày, năm đó " + y;
+                break;
+            case 2:
+                document.getElementById("display").innerHTML = `Tháng 2 có ${m} ngày, năm đó  ${y}`;
+                break;
+            case 3:
+                document.getElementById("display").innerHTML = "Tháng 3 có 31 ngày, năm đó " + y;
+                break;
+            case 4:
+                document.getElementById("display").innerHTML = "Tháng 4 có 30 ngày, năm đó " + y;
+                break;
+            case 5:
+                document.getElementById("display").innerHTML = "Tháng 5 có 31 ngày, năm đó " + y;
+                break;
+            case 6:
+                document.getElementById("display").innerHTML = "Tháng 6 có 30 ngày, năm đó "+ y;
+                break;
+            case 7:
+                document.getElementById("display").innerHTML = "Tháng 7 có 31 ngày, năm đó "+ y;
+                break;
+            case 8:
+                document.getElementById("display").innerHTML = "Tháng 8 có 31 ngày, năm đó "+ y;
+                break;
+            case 9:
+                document.getElementById("display").innerHTML = "Tháng 9 có 30 ngày, năm đó "+ y;
+                break;
+            case 10:
+                document.getElementById("display").innerHTML = "Tháng 10 có 31 ngày, năm đó "+ y;
+                break;
+            case 11:
+                document.getElementById("display").innerHTML = "Tháng 11 có 30 ngày, năm đó "+ y;
+                break;
+            case 12:
+                document.getElementById("display").innerHTML = "Tháng 1 có 31 ngày, năm đó "+ y;
+                break;
+            default: alert("Sai cú pháp");
+
+        }
+    }
+</script>
+</html>

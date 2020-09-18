@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="display"></div>
+<script>
+    let newArr = [
+        ["dell", 1000,100],
+        ["asus", 2000,75],
+        ["nokia", 3000,11],
+        ["sony", 4000,55],
+    ];
+    let html ="";
+    for (let i=0;i< newArr.length; i++){
+        html += "<table>";
+        for (let j = 0; j < newArr[j].length; j++) {
+            html+= "<tr>";
+                html+= "<td>"+arrNew[i][j]+"</td>";
+            html+= "</tr>";
+        }
+        html += "</table>";
+    }
+    document.getElementById("display").innerText = html
+</script>
+</body>
+</html>

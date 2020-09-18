@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let arr = ["abc", "b", "bkhfc", "abc", "bkhfc", "bkhfh"];
+        let arrnew = [];
+        let count = 0;
+        let max = arr[0].length;
+        for (let i = 1; i < arr.length; i++) {
+            if(max<arr[i].length){
+                max = arr[i].length;
+            }
+        }
+        for (let i = 0; i < arr.length; i++) {
+            if(arr[i].length === max ){
+                arrnew.push(arr[i]);
+                count ++;
+            }
+        }
+        console.log(`trong mảng ${arrnew} có ${count} phần tử`);
+    </script>
+</body>
+</html>
