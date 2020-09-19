@@ -11,7 +11,7 @@ function updateScreen(){
     }
     drawScore();
 }
-setInterval(updateScreen, 100/6);
+setInterval(updateScreen, 1000/60);
 function pause(){
    alert("Pause");
 }
@@ -39,3 +39,26 @@ function randomColor() {
     let blue = Math.floor(Math.random() * 255);
     return "rgb(" + red + "," + blue + "," + green +")";
 }
+
+function moveKey(e) {
+    switch (e.keyCode) {
+        case 68:
+            circle.dx = 30;
+            circle.dy = 0;
+            break;
+        case 65:
+            circle.dx = -30;
+            circle.dy = 0;
+            break;
+        case 87:
+            circle.dx = 0;
+            circle.dy = -30;
+            break;
+
+        case 83:
+            circle.dx = 0;
+            circle.dy = 30;
+            break;
+    }
+}
+window.addEventListener("keydown", moveKey);

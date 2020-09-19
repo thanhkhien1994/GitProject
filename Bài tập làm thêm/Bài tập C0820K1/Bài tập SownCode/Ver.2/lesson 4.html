@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Bài 43: Hãy đếm số lượng chữ số của số nguyên dương n</p>
+</body>
+<script>
+    let num = (prompt("Nhập vào một số"))
+    count = 0;
+    for (let i = 0; i < num.length; i++) {
+        switch (num[i]){
+            case "0":
+            case "1":
+            case "2":
+            case "3":
+            case "4":
+            case "5":
+            case "6":
+            case "7":
+            case "8":
+            case "9":
+                count++;
+        }
+    }
+
+    alert(`Bạn nhập vào là ${num} có ${count} chữ số`)
+</script>
+</html>
