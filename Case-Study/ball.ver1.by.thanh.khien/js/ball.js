@@ -1,6 +1,3 @@
-let score = 0;
-let level = 1;
-
 function Circle(x, y, r) {
     this.x = x;
     this.y = y;
@@ -9,7 +6,7 @@ function Circle(x, y, r) {
     this.dy = 0;
     this.color = "red"
 
-    this.drawCircle = function () {
+    this.draw = function () {
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
         ctx.fillStyle = this.color;
@@ -46,6 +43,4 @@ function Circle(x, y, r) {
         }
     }
 }
-
-let circle = new Circle(250, 620, 15);
 

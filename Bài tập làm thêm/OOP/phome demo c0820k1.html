@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Mobile {
+        constructor(name) {
+            this.name = name;
+            this.message = "";
+            this.inbox = [];
+            this.outbox = [];
+            this.battery = 100;
+            this.status = true;
+        }
+
+        writeMessage(message){
+            this.message = message;
+        }
+
+        sendMessage(phone){
+            if (this.checkOnOff())
+            if(this.battery>5){
+                this.outbox.push(this.message);
+                phone.inbox.push(this.message);
+                this.battery--;
+            }else alert("không gửi được tin nhắn");
+
+        }
+
+        turnOn(){
+            this.status = true;
+        }
+
+        turnOff(){
+            this.status = false;
+        }
+
+        checkOnOff(){
+            return  this.status;
+        }
+    }
+</script>
+</body>
+</html>

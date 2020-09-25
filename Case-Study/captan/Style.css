@@ -1,0 +1,26 @@
+@font-face { font-family: SuperLegendBoy; src: url('font/SuperLegendBoy-4w8Y.ttf'); }
+
+* {
+    background-image: url("images/wohGvC.png");
+
+}
+
+#myCanvas {
+    border: 3px solid dodgerblue;
+    margin-left: 500px;
+    margin-top: 40px;
+    background-color: sandybrown;
+    background-image: url("images/horizontal-straight-seamless-roads-modern-asphalt-repetitive-highways_53562-4801.jpg");
+
+}
+
+#banner {
+    border: 0;
+    width: 300px;
+    height: 650px;
+    margin-left: 100px;
+    margin-top: -660px;
+    position: relative;
+    background-image: url("images/captainbanner.jpg");
+}
+
