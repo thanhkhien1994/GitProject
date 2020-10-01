@@ -10,7 +10,7 @@ function updateBulletS2Tank() {
                     ++score;
                     setTimeout(() => {
                         status[j] = true;
-                    }, 10000);
+                    }, 1000);
                     bulletBom = true;
                     indexBullet = i;
                 }

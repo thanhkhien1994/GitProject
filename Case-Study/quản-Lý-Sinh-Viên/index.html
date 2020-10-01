@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="showListStudent();">
+<div class="row">
+<div class="col-sm-3" style="position: fixed; top: 0; left: 0;">
+    <table>
+        <tr><th colspan="2"><p>CTCP-CODEGYM VIỆT NAM</p></th></tr>
+        <tr><td><input type="text"  placeholder="Nhập tên học viên" id="search" onkeyup="searchStudent();"></td></tr>
+        <tr><td><p id="display"></p></td></tr>
+    </table><hr><br><br>
+    <fieldset><legend>Thêm học viên</legend>
+        <table>
+            <tr><td colspan="2"><input type="text" placeholder="Nhập họ tên" id="name"></td></tr>
+            <tr><td colspan="2"><input type="text" placeholder="Nhập Lớp" id="class"></td></tr>
+            <tr><td colspan="2"><input type="number" placeholder="Nhập tuổi" id="age"></td></tr>
+            <tr><td colspan="2"><input type="text" placeholder="Nhập địa chỉ" id="address"></td></tr>
+            <tr>
+                <td width="50%"><input type="radio" onclick="checkGender('nam');" name="gender" class="gender"><label>Nam</label></td>
+                <td width="50%"><input type="radio" onclick="checkGender('nu');" name="gender" class="gender"><label>Nữ</label></td>
+            </tr>
+            <tr><td colspan="2"><input type="text" placeholder="Nhập mail" id="mail"></td></tr>
+            <tr><td colspan="3"><button onclick="init();" id="add">Thêm</button></td></tr>
+        </table>
+    </fieldset>
+</div>
+<div id="list" class="col-sm-9" style="margin-left: 24%;"></div>
+</div>
+</body>
+</html>
+<script src="js/variable.js"></script>
+<script src="js/function.js"></script>
+<script src="js/student.js"></script>
+<script src="js/delete.js"></script>
+<script src="js/edit.js"></script>
+<script src="js/init.js"></script>
+<script src="js/search.js"></script>
+<script src="js/shows.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous">
+</script>
+
+
+<link rel="stylesheet" href="css/css.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

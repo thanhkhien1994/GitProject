@@ -20,40 +20,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="823c3efa-282d-4392-a455-8d59d3375c8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bài tập làm thêm/CSS/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bài tập làm thêm/OOP/phome demo c0820k1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bài tập làm thêm/Test/tank.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/ball.ver1.by.thanh.khien/js/bricksS2Circle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/ball.ver1.by.thanh.khien/js/keyEvent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/ball.ver1.by.thanh.khien/js/object.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/ball.ver1.by.thanh.khien/js/updateScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/tank.by.khien/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/tank.by.khien/js/border.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/tank.by.khien/js/bullet.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/tank.by.khien/js/const.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/tank.by.khien/js/js.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/tank.by.khien/js/key.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/tank.by.khien/js/movie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/tank.by.khien/js/tank.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/tank.by.khien/js/text.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/tank.by.khien/js/update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/tank.by.khien/sound/NFF-boy-fatigue.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/tank.by.khien/sound/NFF-car-hit.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/tank.by.khien/sound/NFF-coin-04.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/tank.by.khien/sound/trafficsound.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài tập làm thêm/Bài tập C0820K1/Bài tập SownCode/ver.3/lesson1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài tập làm thêm/Bài tập C0820K1/Bài tập SownCode/ver.3/lesson2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài tập làm thêm/Test/test var let.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/quản-Lý-Sinh-Viên/css/css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/quản-Lý-Sinh-Viên/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/quản-Lý-Sinh-Viên/js/delete.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/quản-Lý-Sinh-Viên/js/edit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/quản-Lý-Sinh-Viên/js/function.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/quản-Lý-Sinh-Viên/js/init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/quản-Lý-Sinh-Viên/js/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/quản-Lý-Sinh-Viên/js/shows.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/quản-Lý-Sinh-Viên/js/student.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case-Study/quản-Lý-Sinh-Viên/js/variable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-Study/ball.ver1.by.thanh.khien/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/ball.ver1.by.thanh.khien/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-Study/ball.ver1.by.thanh.khien/js/TextGame.js" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/ball.ver1.by.thanh.khien/js/TextGame.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-Study/ball.ver1.by.thanh.khien/js/ball.js" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/ball.ver1.by.thanh.khien/js/ball.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-Study/ball.ver1.by.thanh.khien/js/brick.js" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/ball.ver1.by.thanh.khien/js/brick.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-Study/ball.ver1.by.thanh.khien/js/function.js" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/ball.ver1.by.thanh.khien/js/function.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-Study/captan.Huu.Nghia" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-Study/game.car.by.thanh.khien/game-car.html" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/game.car.by.thanh.khien/game-car.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-Study/game.car.by.thanh.khien/js/function.js" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/game.car.by.thanh.khien/js/function.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-Study/game.car.by.thanh.khien/js/moto.js" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/game.car.by.thanh.khien/js/moto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-Study/game.car.by.thanh.khien/js/oto.js" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/game.car.by.thanh.khien/js/oto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-Study/game.car.by.thanh.khien/js/ways.js" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/game.car.by.thanh.khien/js/ways.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bài tập làm thêm/Bài tập C0620K1/17. Lập trình hướng đối tượng 2/[Bài tập] Phát triển trò chơi cờ ca-ro.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bài tập làm thêm/CSS/canvas.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-Study/ball.ver1.by.thanh.khien/js/gift.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-Study/game.car.by.thanh.khien/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/game.car.by.thanh.khien/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-Study/tank.by.khien/js/js.js" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/tank.by.khien/js/js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-Study/tank.by.khien/js/update.js" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/tank.by.khien/js/update.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bài-thi/lesson-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/bài-thi/lesson-4.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,8 +51,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -107,21 +95,21 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Admin\OneDrive\Project Modul 1\Case-Study\tank.by.khien" />
-      <recent name="C:\Users\Administrator\Desktop\Dự án 1\Case-Study\game-car" />
-      <recent name="C:\Users\Administrator\Desktop\Dự án 1\Case-Study\Test Case Study" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\SONY\Desktop\Project Modul 1\Case-Study\quản-Lý-Sinh-Viên\js" />
       <recent name="C:\Users\Admin\OneDrive\Project Modul 1\Case-Study\tank.by.khien\js" />
       <recent name="C:\Users\Admin\OneDrive\Project Modul 1\Case-Study\ball.ver1.by.thanh.khien\js" />
       <recent name="C:\Users\Administrator\Desktop\Dự án 1" />
       <recent name="C:\Users\Administrator\Desktop\Dự án 1\week 4\Case-Study\game.car.by.thanh.khien\css" />
-      <recent name="C:\Users\Administrator\Desktop\Dự án 1\week 4\Case-Study\game.car.by.thanh.khien\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\OneDrive\Project Modul 1\Case-Study\tank.by.khien" />
+      <recent name="C:\Users\Administrator\Desktop\Dự án 1\Case-Study\game-car" />
+      <recent name="C:\Users\Administrator\Desktop\Dự án 1\Case-Study\Test Case Study" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -183,6 +171,22 @@
       <workItem from="1600938498683" duration="45413000" />
       <workItem from="1601012967329" duration="20299000" />
       <workItem from="1601041962151" duration="1187000" />
+      <workItem from="1601046717642" duration="283000" />
+      <workItem from="1601086474414" duration="1380000" />
+      <workItem from="1601088150605" duration="3415000" />
+      <workItem from="1601094781931" duration="424000" />
+      <workItem from="1601101598834" duration="6020000" />
+      <workItem from="1601118541462" duration="3907000" />
+      <workItem from="1601134218949" duration="37000" />
+      <workItem from="1601344234586" duration="1302000" />
+      <workItem from="1601354596847" duration="1373000" />
+      <workItem from="1601362044794" duration="17679000" />
+      <workItem from="1601381291644" duration="24155000" />
+      <workItem from="1601429015646" duration="35236000" />
+      <workItem from="1601474436797" duration="522000" />
+      <workItem from="1601477359507" duration="2144000" />
+      <workItem from="1601486889570" duration="402000" />
+      <workItem from="1601490945413" duration="2370000" />
     </task>
     <servers />
   </component>
@@ -210,6 +214,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="195" y="7" key="#Plugins/0.0.1366.728@0.0.1366.728" timestamp="1598515843985" />
+    <state x="505" y="167" key="#Web_Browsers" timestamp="1601478721213">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state x="505" y="167" key="#Web_Browsers/0.0.1366.740@0.0.1366.740" timestamp="1601478721213" />
     <state x="412" y="170" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600780824970">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -235,14 +243,16 @@
     </state>
     <state x="263" y="77" key="IDE.errors.dialog/0.0.1366.728@0.0.1366.728" timestamp="1598530312365" />
     <state x="263" y="103" key="IDE.errors.dialog/0.0.1366.738@0.0.1366.738" timestamp="1598339496785" />
-    <state x="103" y="22" key="SettingsEditor" timestamp="1601043073135">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="232" y="0" key="SettingsEditor" timestamp="1601513853517">
+      <screen x="83" y="0" width="1197" height="720" />
     </state>
     <state x="149" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1598530126376" />
     <state x="103" y="22" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1601043073135" />
+    <state x="103" y="13" key="SettingsEditor/0.0.1366.740@0.0.1366.740" timestamp="1601362072107" />
     <state x="368" y="29" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1598532091795" />
     <state x="174" y="0" key="SettingsEditor/62.0.1304.768@62.0.1304.768" timestamp="1600132103789" />
     <state x="185" y="0" key="SettingsEditor/74.0.1292.768@74.0.1292.768" timestamp="1599900149408" />
+    <state x="232" y="0" key="SettingsEditor/83.0.1197.720@83.0.1197.720" timestamp="1601513853517" />
     <state x="328" y="0" width="877" height="743" maximized="true" key="dock-window-1" timestamp="1599752723256">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
@@ -256,15 +266,17 @@
     </state>
     <state x="199" y="79" width="584" height="285" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1366.738@0.0.1366.738" timestamp="1598543609366" />
     <state x="199" y="82" width="565" height="285" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1366.768@0.0.1366.768" timestamp="1598532089040" />
-    <state x="323" y="160" key="run.anything.popup" timestamp="1600961112403">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="323" y="160" key="run.anything.popup" timestamp="1601364220073">
+      <screen x="0" y="0" width="1366" height="740" />
     </state>
     <state x="323" y="160" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1600961112403" />
+    <state x="323" y="160" key="run.anything.popup/0.0.1366.740@0.0.1366.740" timestamp="1601364220073" />
     <state x="370" y="167" key="run.anything.popup/62.0.1304.768@62.0.1304.768" timestamp="1600360602248" />
-    <state x="330" y="86" width="704" height="652" key="search.everywhere.popup" timestamp="1600980266620">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="330" y="86" width="704" height="654" key="search.everywhere.popup" timestamp="1601427515389">
+      <screen x="0" y="0" width="1366" height="740" />
     </state>
     <state x="330" y="86" width="704" height="652" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1600980266620" />
+    <state x="330" y="86" width="704" height="654" key="search.everywhere.popup/0.0.1366.740@0.0.1366.740" timestamp="1601427515389" />
     <state x="377" y="89" width="672" height="678" key="search.everywhere.popup/62.0.1304.768@62.0.1304.768" timestamp="1600484056755" />
   </component>
 </project>

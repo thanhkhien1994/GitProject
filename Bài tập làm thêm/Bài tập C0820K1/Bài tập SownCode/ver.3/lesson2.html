@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="arrIndexFloatUp()">
+<p>Bài 2: Viết hàm sắp xếp mảng 1 chiều các số thực tăng dần</p>
+</body>
+</html>
+<script >
+    function arrIndexFloatUp(){
+       let arrNum = [-12,15,-22,55,-96,-35,24,-78,25,-25];
+
+       let temp;
+        for (let i = 0; i < arrNum.length; i++) {
+            for (let j = 0; j < arrNum.length; j++) {
+                if(arrNum[i] < arrNum[j]){
+                    temp = arrNum[i];
+                    arrNum[i] = arrNum[j];
+                    arrNum[j] = temp;
+                }
+            }
+        }
+        document.write(arrNum);
+    }
+</script>

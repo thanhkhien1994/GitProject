@@ -22,7 +22,7 @@ let updateScreen = setInterval(() => {
     updateTankS2Tank();
     isBulletBom();
     for (let i = 0; i < myDot.length; i++) {
-        if (!status[i]) continue
+        if (!status[i]) continue;
         for (let j = 0; j < myDot[i].length; j++) {
             myDot[i][j].draw();
         }

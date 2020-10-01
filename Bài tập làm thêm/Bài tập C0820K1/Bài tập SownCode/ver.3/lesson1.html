@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="sum();">
+<p>Bài 1: Viết hàm tính tổng các giá trị âm trong mảng 1 chiều các số thực</p>
+<p id="display"></p>
+<script>
+    function sum(){
+        let num = "";
+        let arrNum = [-12,15,-22,55,-96,-35,24,-78,25,-25];
+        for (let i = 0; i < arrNum.length; i++) {
+            if(arrNum[i]<0){
+                num+= `${arrNum[i]}, `;
+                document.getElementById("display").innerHTML = `các số nguyên âm trong mảng là:  ${num}`;
+            }
+        }
+    }
+
+
+
+</script>
+</body>
+</html>
