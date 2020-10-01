@@ -20,28 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="823c3efa-282d-4392-a455-8d59d3375c8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Bài tập làm thêm/Bài tập C0820K1/Bài tập SownCode/ver.3/lesson1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bài tập làm thêm/Bài tập C0820K1/Bài tập SownCode/ver.3/lesson2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bài tập làm thêm/Test/test var let.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/quản-Lý-Sinh-Viên/css/css.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/quản-Lý-Sinh-Viên/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/quản-Lý-Sinh-Viên/js/delete.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/quản-Lý-Sinh-Viên/js/edit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/quản-Lý-Sinh-Viên/js/function.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/quản-Lý-Sinh-Viên/js/init.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/quản-Lý-Sinh-Viên/js/search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/quản-Lý-Sinh-Viên/js/shows.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/quản-Lý-Sinh-Viên/js/student.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case-Study/quản-Lý-Sinh-Viên/js/variable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bài tập làm thêm/Bài tập C0620K1/17. Lập trình hướng đối tượng 2/[Bài tập] Phát triển trò chơi cờ ca-ro.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bài tập làm thêm/CSS/canvas.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-Study/ball.ver1.by.thanh.khien/js/gift.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-Study/game.car.by.thanh.khien/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/game.car.by.thanh.khien/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-Study/tank.by.khien/js/js.js" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/tank.by.khien/js/js.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-Study/tank.by.khien/js/update.js" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/tank.by.khien/js/update.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bài-thi/lesson-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/bài-thi/lesson-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-Study/quản-Lý-Sinh-Viên/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/quản-Lý-Sinh-Viên/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-Study/quản-Lý-Sinh-Viên/js/variable.js" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/quản-Lý-Sinh-Viên/js/variable.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +167,9 @@
       <workItem from="1601474436797" duration="522000" />
       <workItem from="1601477359507" duration="2144000" />
       <workItem from="1601486889570" duration="402000" />
-      <workItem from="1601490945413" duration="2370000" />
+      <workItem from="1601490945413" duration="4706000" />
+      <workItem from="1601525287351" duration="2423000" />
+      <workItem from="1601534083328" duration="408000" />
     </task>
     <servers />
   </component>
