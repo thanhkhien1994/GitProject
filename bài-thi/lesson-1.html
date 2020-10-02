@@ -6,17 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        function ptbn(a,b){
-            if(a == 0 && b==0){
-    
-                return "Phương trình có vô số nghiệm"
-            } else if(a == 0){
-                return "phương trình vô nghiệm";
-            } else {return ("Phương trình có nghiệm :" + (-b/a))}
-        }
+<script>
 
-        document.write(ptbn(5,8));
-    </script>
+    function findMax(arr) {
+        let max = arr[0]
+        for (let i = 1; i < arr.length; i++) {
+            if(arr[i]>= max){
+                max = arr[i];
+            }
+        }
+        return max;
+    }
+
+    let arr = [3, 4, 5, 6, 9, 10, 1];
+    document.write(`${findMax(arr)} là số lớn nhất`);
+</script>
 </body>
 </html>

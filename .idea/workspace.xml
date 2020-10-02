@@ -21,8 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="823c3efa-282d-4392-a455-8d59d3375c8c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case-Study/quản-Lý-Sinh-Viên/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/quản-Lý-Sinh-Viên/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case-Study/ball.ver1.by.thanh.khien.rar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Case-Study/quản-Lý-Sinh-Viên/js/variable.js" beforeDir="false" afterPath="$PROJECT_DIR$/Case-Study/quản-Lý-Sinh-Viên/js/variable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bài-thi/lesson-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/bài-thi/lesson-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bài-thi/lesson-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/bài-thi/lesson-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bài-thi/lesson-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/bài-thi/lesson-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bài-thi/lesson-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/bài-thi/lesson-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop.ini" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +72,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="js.last.introduce.type" value="VAR" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Case-Study/tank.by.khien" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -169,7 +174,12 @@
       <workItem from="1601486889570" duration="402000" />
       <workItem from="1601490945413" duration="4706000" />
       <workItem from="1601525287351" duration="2423000" />
-      <workItem from="1601534083328" duration="408000" />
+      <workItem from="1601534083328" duration="767000" />
+      <workItem from="1601535722215" duration="124000" />
+      <workItem from="1601535931597" duration="903000" />
+      <workItem from="1601541347336" duration="3537000" />
+      <workItem from="1601608552465" duration="1736000" />
+      <workItem from="1601623748612" duration="2344000" />
     </task>
     <servers />
   </component>
@@ -215,12 +225,13 @@
     </state>
     <state x="413" y="113" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1600360075172" />
     <state x="413" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1601021007002" />
-    <state x="503" y="128" key="FileChooserDialogImpl" timestamp="1600441857106">
-      <screen x="62" y="0" width="1304" height="768" />
+    <state x="517" y="128" key="FileChooserDialogImpl" timestamp="1601536840833">
+      <screen x="83" y="0" width="1283" height="768" />
     </state>
     <state x="462" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1598530762480" />
     <state x="462" y="128" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1598532087162" />
     <state x="503" y="128" key="FileChooserDialogImpl/62.0.1304.768@62.0.1304.768" timestamp="1600441857106" />
+    <state x="517" y="128" key="FileChooserDialogImpl/83.0.1283.768@83.0.1283.768" timestamp="1601536840833" />
     <state x="263" y="77" key="IDE.errors.dialog" timestamp="1598530312365">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

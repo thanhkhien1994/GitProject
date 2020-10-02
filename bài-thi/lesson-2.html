@@ -10,19 +10,19 @@
         let arrInt = [23, 33, 43, 53, 63, 73, 83, 83, 93, 103];
         let x = parseInt(prompt("Nhập vào số nguyên X cần tìm"));
 
-        function fromArray(arr, x) {
-            for (let i = arr.length - 1; i >= 0; i--) {
+        function tryRemoveFromArray(arr, x) {
 
+            for (let i = arr.length - 1; i >= 0; i--) {
                 if (x == arr[i]) {
-                    alert ("true");
-                    alert ("Index: " + i);
+                    arr.splice(i, 1);
                     break;
                 }
             }
 
-        } 
-        
-        fromArray(arrInt, x);
+        }
+
+        tryRemoveFromArray(arrInt, x);
+        document.write(arrInt);
     </script>
 </body>
 </html>

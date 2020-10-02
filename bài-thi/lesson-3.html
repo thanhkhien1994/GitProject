@@ -8,25 +8,28 @@
 </head>
 
 <body>
-    <script>
-        let x = prompt("Nhập vào 1 đoạn văn bản bất kì");
-        let count = 0;
-        function myFunction(str) {
-            let newArrr = ["a", "o", "u", "i", "e"];
-            let arr = str.split("");
-            // for (let i = 0; i < arr.length; i++) {
-            //     for (j = 0; j < newArrr.length; j++) {
-            //         if (arr[i] == newArrr[j]) {
-            //             count++;
-            //         }
-            //     }
-            // }
-            console.log(count);
-            console.log(arr);
-            console.log(newArrr);
+<script>
+    let number = +prompt("Nhập vào 1 số");
+    function isFibonacci(n) {
+        let isCheck = true;
+        if (n < 2) {
+            isCheck = false;
+        } else {
+            for (let i = 2; i < n; i++) {
+                if (n % i === 0) {
+                    isCheck = false;
+                    break;
+                }
+            }
         }
-        myFunction(x);
-    </script>
+        if (isCheck === true) {
+            document.write(`${n} là số Fibonacci`);
+        } else {
+            document.write(`${n} không phải là số Fibonacci`);
+        }
+    }
+    isFibonacci(number);
+</script>
 
 </body>
 

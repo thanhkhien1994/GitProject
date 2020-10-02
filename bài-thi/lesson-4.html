@@ -2,47 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>test</title>
 </head>
 <body>
-    <script>
-        function Animal (name, weight){
-            this.name = name;
-            this.weight = weight;
+<canvas height="300px" width="500px" id="_canvas" ></canvas>
+<script>
+    var c=document.getElementById("_canvas");
+    var ctx =c.getContext("2d");
 
-            this.setName = function(name){
-                this.name = name;
-            }
+    let hinhTron = new Circle(10,10,100,"color");
 
-            this.setWeight = function(weight){
-                this.weight = weight;
-            }
+    function Circle(x,y,radius,color) {
+        this.x = x;
+        this.y = y;
+        this.radius = radius;
+        this.color=color;
 
-            this.getName = function(){
-                return this.name;
-            }
-            
-            this.getWeight = function(){
-                return this.weigth;
-            }
-             this.toString = function(){
-                 return "Name " + this.name +", " + "Cân nặng "+ this.weight;
-             }
+        this.render = function () {
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.radius,0,2*Math.PI);
+            ctx.strokeStyle='#000000';
+            ctx.fill();
+            ctx.stroke();
+
         }
 
-        let objAnimal1 = new Animal();
-        objAnimal1.name = "Elephant";
-        objAnimal1.weight = 45.6;
-        alert(objAnimal1.toString());
+    }
+    hinhTron.render();
 
 
-        let objAnimal2 = new Animal("khien",55);
-        objAnimal2.setName("Mouse")
-        alert(objAnimal2.toString())
-
-        
-
-    </script>
+</script>
 </body>
 </html>
